@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/rest": "^0.4.1",
+    "discord.js": "^13.6.0",
+    "distube": "^3.3.4",
+    "moment": "^2.29.1"
+  },
+  "name": "bicycle",
+  "version": "1.0.0",
+  "main": "src/Bicycle.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/Bicycle.js"
+  },
+  "keywords": [],
+  "author": "turph",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/voice": "^0.10.0",
+    "@distube/soundcloud": "^1.1.0",
+    "@distube/spotify": "^1.2.1",
+    "@distube/yt-dlp": "^1.0.2",
+    "chalk": "^5.0.1",
+    "discord-api-types": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "ffmpeg-static": "^4.4.1",
+    "libsodium-wrappers": "^0.7.10",
+    "mongoose": "^6.0.12",
+    "pify": "^5.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+import BaseEvent from "../structures/BaseEvent.js"
+
+export default class Event extends BaseEvent {
+    constructor() {
+        super("event")
+    }
+
+    async run(client) {
+
+    }
+}

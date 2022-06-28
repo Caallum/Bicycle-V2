@@ -1,0 +1,1007 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i' ]
+1 info using npm@7.20.3
+2 info using node@v16.6.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/container/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 2ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 11ms
+18 timing npm:load:configload Completed in 11ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing npm:load:setupLog Completed in 2ms
+21 timing npm:load:cleanupLog Completed in 3ms
+22 timing npm:load:configScope Completed in 0ms
+23 timing npm:load:projectScope Completed in 1ms
+24 timing npm:load Completed in 17ms
+25 timing config:load:flatten Completed in 4ms
+26 timing arborist:ctor Completed in 1ms
+27 timing idealTree:init Completed in 79ms
+28 timing idealTree:userRequests Completed in 0ms
+29 silly idealTree buildDeps
+30 silly fetch manifest distube@^3.3.4
+31 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+32 http fetch GET 200 https://registry.npmjs.org/distube 144ms (cache hit)
+33 silly fetch manifest @discordjs/opus@^0.7.0
+34 http fetch GET 200 https://registry.npmjs.org/@discordjs%2fopus 10ms (cache hit)
+35 silly fetch manifest @discordjs/voice@^0.8.0
+36 http fetch GET 200 https://registry.npmjs.org/@discordjs%2fvoice 4ms (cache hit)
+37 silly fetch manifest discord.js@^13.6.0
+38 http fetch GET 200 https://registry.npmjs.org/discord.js 8ms (cache hit)
+39 silly fetch manifest @discordjs/builders@^0.11.0
+40 http fetch GET 200 https://registry.npmjs.org/@discordjs%2fbuilders 8ms (cache hit)
+41 silly fetch manifest @distube/soundcloud@^1.1.0
+42 http fetch GET 200 https://registry.npmjs.org/@distube%2fsoundcloud 4ms (cache hit)
+43 silly fetch manifest @distube/spotify@^1.2.1
+44 http fetch GET 200 https://registry.npmjs.org/@distube%2fspotify 4ms (cache hit)
+45 silly fetch manifest @distube/yt-dlp@0.0.1
+46 http fetch GET 200 https://registry.npmjs.org/@distube%2fyt-dlp 3ms (cache hit)
+47 silly fetch manifest ffmpeg-static@^4.4.1
+48 http fetch GET 200 https://registry.npmjs.org/ffmpeg-static 5ms (cache hit)
+49 silly placeDep ROOT @discordjs/builders@0.11.0 REPLACE for: bicycle@1.0.0 want: ^0.11.0
+50 silly placeDep ROOT @discordjs/opus@0.7.0 OK for: bicycle@1.0.0 want: ^0.7.0
+51 silly placeDep ROOT @discordjs/voice@0.8.0 OK for: bicycle@1.0.0 want: ^0.8.0
+52 silly placeDep ROOT @distube/soundcloud@1.1.0 OK for: bicycle@1.0.0 want: ^1.1.0
+53 silly placeDep ROOT distube@3.3.4 OK for: @distube/soundcloud@1.1.0 want: ^3.1.0
+54 silly placeDep ROOT @distube/spotify@1.2.1 OK for: bicycle@1.0.0 want: ^1.2.1
+55 silly placeDep ROOT @distube/yt-dlp@0.0.1 OK for: bicycle@1.0.0 want: 0.0.1
+56 silly placeDep ROOT ffmpeg-static@4.4.1 OK for: bicycle@1.0.0 want: ^4.4.1
+57 silly fetch manifest discord-api-types@^0.26.0
+58 silly fetch manifest @discordjs/node-pre-gyp@^0.4.2
+59 silly fetch manifest node-addon-api@^4.2.0
+60 silly fetch manifest discord-api-types@^0.26.1
+61 silly fetch manifest prism-media@^1.3.2
+62 silly fetch manifest tiny-typed-emitter@^2.1.0
+63 silly fetch manifest soundcloud.ts@^0.4.5
+64 silly fetch manifest @distube/youtube-dl@^2.2.4
+65 silly fetch manifest @distube/ytdl-core@^4.11.1
+66 silly fetch manifest @distube/ytpl@^1.1.1
+67 silly fetch manifest @distube/ytsr@^1.1.5
+68 silly fetch manifest prism-media@https://codeload.github.com/distubejs/prism-media/tar.gz/main#workaround.tar.gz
+69 silly fetch manifest spotify-uri@^2.2.0
+70 silly fetch manifest spotify-url-info@^2.2.5
+71 silly fetch manifest spotify-web-api-node@^5.0.2
+72 silly fetch manifest @derhuerst/http-basic@^8.2.0
+73 silly fetch manifest env-paths@^2.2.0
+74 silly fetch manifest https-proxy-agent@^5.0.0
+75 silly fetch manifest progress@^2.0.3
+76 http fetch GET 200 https://registry.npmjs.org/prism-media 63ms (cache hit)
+77 http fetch GET 200 https://registry.npmjs.org/@discordjs%2fnode-pre-gyp 66ms (cache hit)
+78 http fetch GET 200 https://registry.npmjs.org/@distube%2fytdl-core 63ms (cache hit)
+79 http fetch GET 200 https://registry.npmjs.org/node-addon-api 67ms (cache hit)
+80 http fetch GET 200 https://registry.npmjs.org/tiny-typed-emitter 67ms (cache hit)
+81 http fetch GET 200 https://registry.npmjs.org/@distube%2fyoutube-dl 66ms (cache hit)
+82 http fetch GET 200 https://registry.npmjs.org/@distube%2fytsr 65ms (cache hit)
+83 http fetch GET 200 https://registry.npmjs.org/spotify-uri 65ms (cache hit)
+84 http fetch GET 200 https://registry.npmjs.org/@distube%2fytpl 69ms (cache hit)
+85 http fetch GET 200 https://registry.npmjs.org/soundcloud.ts 72ms (cache hit)
+86 http fetch GET 200 https://registry.npmjs.org/spotify-web-api-node 70ms (cache hit)
+87 http fetch GET 200 https://registry.npmjs.org/spotify-url-info 71ms (cache hit)
+88 http fetch GET 200 https://registry.npmjs.org/env-paths 69ms (cache hit)
+89 http fetch GET 200 https://registry.npmjs.org/progress 69ms (cache hit)
+90 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 72ms (cache hit)
+91 http fetch GET 200 https://registry.npmjs.org/@derhuerst%2fhttp-basic 73ms (cache hit)
+92 http fetch GET 200 https://registry.npmjs.org/discord-api-types 87ms (cache hit)
+93 http fetch GET 200 https://codeload.github.com/distubejs/prism-media/tar.gz/main#workaround.tar.gz 744ms (cache revalidated)
+94 timing idealTree:#root Completed in 1047ms
+95 silly placeDep node_modules/@discordjs/builders discord-api-types@0.26.1 OK for: @discordjs/builders@0.11.0 want: ^0.26.0
+96 timing idealTree:node_modules/@discordjs/builders Completed in 3ms
+97 silly placeDep ROOT @discordjs/node-pre-gyp@0.4.2 OK for: @discordjs/opus@0.7.0 want: ^0.4.2
+98 silly placeDep ROOT node-addon-api@4.3.0 OK for: @discordjs/opus@0.7.0 want: ^4.2.0
+99 silly fetch manifest detect-libc@^1.0.3
+100 silly fetch manifest make-dir@^3.1.0
+101 silly fetch manifest nopt@^5.0.0
+102 silly fetch manifest npmlog@^5.0.1
+103 silly fetch manifest rimraf@^3.0.2
+104 silly fetch manifest semver@^7.3.5
+105 silly fetch manifest tar@^6.1.11
+106 http fetch GET 200 https://registry.npmjs.org/rimraf 27ms (cache hit)
+107 http fetch GET 200 https://registry.npmjs.org/make-dir 31ms (cache hit)
+108 http fetch GET 200 https://registry.npmjs.org/detect-libc 32ms (cache hit)
+109 http fetch GET 200 https://registry.npmjs.org/nopt 33ms (cache hit)
+110 http fetch GET 200 https://registry.npmjs.org/semver 31ms (cache hit)
+111 http fetch GET 200 https://registry.npmjs.org/npmlog 34ms (cache hit)
+112 http fetch GET 200 https://registry.npmjs.org/tar 33ms (cache hit)
+113 timing idealTree:node_modules/@discordjs/opus Completed in 44ms
+114 silly placeDep ROOT detect-libc@1.0.3 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^1.0.3
+115 silly placeDep ROOT https-proxy-agent@5.0.1 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^5.0.0
+116 silly placeDep ROOT make-dir@3.1.0 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^3.1.0
+117 silly placeDep ROOT nopt@5.0.0 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^5.0.0
+118 silly placeDep ROOT npmlog@5.0.1 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^5.0.1
+119 silly placeDep ROOT rimraf@3.0.2 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^3.0.2
+120 silly placeDep ROOT semver@7.3.7 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^7.3.5
+121 silly placeDep ROOT tar@6.1.11 OK for: @discordjs/node-pre-gyp@0.4.2 want: ^6.1.11
+122 silly fetch manifest agent-base@6
+123 silly fetch manifest semver@^6.0.0
+124 silly fetch manifest abbrev@1
+125 silly fetch manifest are-we-there-yet@^2.0.0
+126 silly fetch manifest console-control-strings@^1.1.0
+127 silly fetch manifest gauge@^3.0.0
+128 silly fetch manifest set-blocking@^2.0.0
+129 silly fetch manifest glob@^7.1.3
+130 silly fetch manifest lru-cache@^6.0.0
+131 silly fetch manifest chownr@^2.0.0
+132 silly fetch manifest fs-minipass@^2.0.0
+133 silly fetch manifest minipass@^3.0.0
+134 silly fetch manifest minizlib@^2.1.1
+135 silly fetch manifest mkdirp@^1.0.3
+136 silly fetch manifest yallist@^4.0.0
+137 http fetch GET 200 https://registry.npmjs.org/are-we-there-yet 56ms (cache hit)
+138 http fetch GET 200 https://registry.npmjs.org/abbrev 58ms (cache hit)
+139 http fetch GET 200 https://registry.npmjs.org/agent-base 59ms (cache hit)
+140 http fetch GET 200 https://registry.npmjs.org/console-control-strings 58ms (cache hit)
+141 http fetch GET 200 https://registry.npmjs.org/gauge 59ms (cache hit)
+142 http fetch GET 200 https://registry.npmjs.org/set-blocking 59ms (cache hit)
+143 http fetch GET 200 https://registry.npmjs.org/lru-cache 59ms (cache hit)
+144 http fetch GET 200 https://registry.npmjs.org/chownr 61ms (cache hit)
+145 http fetch GET 200 https://registry.npmjs.org/fs-minipass 60ms (cache hit)
+146 http fetch GET 200 https://registry.npmjs.org/minipass 61ms (cache hit)
+147 http fetch GET 200 https://registry.npmjs.org/minizlib 61ms (cache hit)
+148 http fetch GET 200 https://registry.npmjs.org/glob 65ms (cache hit)
+149 http fetch GET 200 https://registry.npmjs.org/mkdirp 64ms (cache hit)
+150 http fetch GET 200 https://registry.npmjs.org/yallist 64ms (cache hit)
+151 timing idealTree:node_modules/@discordjs/node-pre-gyp Completed in 91ms
+152 silly fetch manifest @discordjs/opus@^0.5.0
+153 silly fetch manifest ffmpeg-static@^4.2.7 || ^3.0.0 || ^2.4.0
+154 silly fetch manifest node-opus@^0.3.3
+155 http fetch GET 200 https://registry.npmjs.org/node-opus 12ms (cache hit)
+156 silly fetch manifest opusscript@^0.0.8
+157 http fetch GET 200 https://registry.npmjs.org/opusscript 7ms (cache hit)
+158 silly placeDep node_modules/@discordjs/voice discord-api-types@0.26.1 OK for: @discordjs/voice@0.8.0 want: ^0.26.1
+159 silly placeDep node_modules/@discordjs/voice prism-media@1.3.2 OK for: @discordjs/voice@0.8.0 want: ^1.3.2
+160 silly placeDep node_modules/@discordjs/voice @discordjs/opus@0.5.3 OK for: prism-media@1.3.2 want: ^0.5.0
+161 silly placeDep ROOT tiny-typed-emitter@2.1.0 OK for: @discordjs/voice@0.8.0 want: ^2.1.0
+162 silly fetch manifest node-addon-api@^3.2.1
+163 timing idealTree:node_modules/@discordjs/voice Completed in 42ms
+164 silly placeDep ROOT soundcloud.ts@0.4.5 OK for: @distube/soundcloud@1.1.0 want: ^0.4.5
+165 silly fetch manifest axios@^0.21.1
+166 http fetch GET 200 https://registry.npmjs.org/axios 8ms (cache hit)
+167 timing idealTree:node_modules/@distube/soundcloud Completed in 18ms
+168 silly placeDep ROOT spotify-uri@2.2.2 OK for: @distube/spotify@1.2.1 want: ^2.2.0
+169 silly placeDep ROOT spotify-url-info@2.2.9 OK for: @distube/spotify@1.2.1 want: ^2.2.5
+170 silly placeDep ROOT spotify-web-api-node@5.0.2 OK for: @distube/spotify@1.2.1 want: ^5.0.2
+171 silly fetch manifest cross-fetch@~3.1.4
+172 silly fetch manifest himalaya@~1.1.0
+173 silly fetch manifest superagent@^6.1.0
+174 http fetch GET 200 https://registry.npmjs.org/cross-fetch 22ms (cache hit)
+175 http fetch GET 200 https://registry.npmjs.org/himalaya 24ms (cache hit)
+176 http fetch GET 200 https://registry.npmjs.org/superagent 25ms (cache hit)
+177 timing idealTree:node_modules/@distube/spotify Completed in 41ms
+178 silly placeDep ROOT @distube/youtube-dl@2.2.4 OK for: @distube/yt-dlp@0.0.1 want: ^2.2.4
+179 silly fetch manifest dargs@~7.0.0
+180 silly fetch manifest execa@~5.1.1
+181 silly fetch manifest get-stream@~6.0.1
+182 silly fetch manifest got@~11.8.2
+183 silly fetch manifest is-unix@~1.0.0
+184 silly fetch manifest mkdirp@~1.0.4
+185 silly fetch manifest p-event@~4.2.0
+186 silly fetch manifest p-reflect@~2.1.0
+187 http fetch GET 200 https://registry.npmjs.org/dargs 33ms (cache hit)
+188 http fetch GET 200 https://registry.npmjs.org/is-unix 28ms (cache hit)
+189 http fetch GET 200 https://registry.npmjs.org/execa 33ms (cache hit)
+190 http fetch GET 200 https://registry.npmjs.org/p-event 29ms (cache hit)
+191 http fetch GET 200 https://registry.npmjs.org/p-reflect 29ms (cache hit)
+192 http fetch GET 200 https://registry.npmjs.org/get-stream 36ms (cache hit)
+193 http fetch GET 200 https://registry.npmjs.org/got 36ms (cache hit)
+194 timing idealTree:node_modules/@distube/yt-dlp Completed in 49ms
+195 silly placeDep ROOT dargs@7.0.0 OK for: @distube/youtube-dl@2.2.4 want: ~7.0.0
+196 silly placeDep ROOT execa@5.1.1 OK for: @distube/youtube-dl@2.2.4 want: ~5.1.1
+197 silly placeDep ROOT get-stream@6.0.1 OK for: @distube/youtube-dl@2.2.4 want: ~6.0.1
+198 silly placeDep ROOT got@11.8.3 OK for: @distube/youtube-dl@2.2.4 want: ~11.8.2
+199 silly placeDep ROOT is-unix@1.0.1 OK for: @distube/youtube-dl@2.2.4 want: ~1.0.0
+200 silly placeDep ROOT mkdirp@1.0.4 OK for: @distube/youtube-dl@2.2.4 want: ~1.0.4
+201 silly placeDep ROOT p-event@4.2.0 OK for: @distube/youtube-dl@2.2.4 want: ~4.2.0
+202 silly placeDep ROOT p-reflect@2.1.0 OK for: @distube/youtube-dl@2.2.4 want: ~2.1.0
+203 silly fetch manifest cross-spawn@^7.0.3
+204 silly fetch manifest human-signals@^2.1.0
+205 silly fetch manifest is-stream@^2.0.0
+206 silly fetch manifest merge-stream@^2.0.0
+207 silly fetch manifest npm-run-path@^4.0.1
+208 silly fetch manifest onetime@^5.1.2
+209 silly fetch manifest signal-exit@^3.0.3
+210 silly fetch manifest strip-final-newline@^2.0.0
+211 silly fetch manifest @szmarczak/http-timer@^4.0.5
+212 silly fetch manifest @types/cacheable-request@^6.0.1
+213 silly fetch manifest @types/responselike@^1.0.0
+214 silly fetch manifest cacheable-lookup@^5.0.3
+215 silly fetch manifest cacheable-request@^7.0.2
+216 silly fetch manifest decompress-response@^6.0.0
+217 silly fetch manifest http2-wrapper@^1.0.0-beta.5.2
+218 silly fetch manifest lowercase-keys@^2.0.0
+219 silly fetch manifest p-cancelable@^2.0.0
+220 silly fetch manifest responselike@^2.0.0
+221 silly fetch manifest p-timeout@^3.1.0
+222 http fetch GET 200 https://registry.npmjs.org/human-signals 62ms (cache hit)
+223 http fetch GET 200 https://registry.npmjs.org/is-stream 61ms (cache hit)
+224 http fetch GET 200 https://registry.npmjs.org/cross-spawn 63ms (cache hit)
+225 http fetch GET 200 https://registry.npmjs.org/onetime 61ms (cache hit)
+226 http fetch GET 200 https://registry.npmjs.org/merge-stream 63ms (cache hit)
+227 http fetch GET 200 https://registry.npmjs.org/signal-exit 61ms (cache hit)
+228 http fetch GET 200 https://registry.npmjs.org/strip-final-newline 62ms (cache hit)
+229 http fetch GET 200 https://registry.npmjs.org/decompress-response 56ms (cache hit)
+230 http fetch GET 200 https://registry.npmjs.org/@szmarczak%2fhttp-timer 62ms (cache hit)
+231 http fetch GET 200 https://registry.npmjs.org/@types%2fresponselike 61ms (cache hit)
+232 http fetch GET 200 https://registry.npmjs.org/@types%2fcacheable-request 63ms (cache hit)
+233 http fetch GET 200 https://registry.npmjs.org/npm-run-path 67ms (cache hit)
+234 http fetch GET 200 https://registry.npmjs.org/cacheable-lookup 63ms (cache hit)
+235 http fetch GET 200 https://registry.npmjs.org/cacheable-request 62ms (cache hit)
+236 http fetch GET 200 https://registry.npmjs.org/p-cancelable 60ms (cache hit)
+237 http fetch GET 200 https://registry.npmjs.org/lowercase-keys 62ms (cache hit)
+238 http fetch GET 200 https://registry.npmjs.org/p-timeout 61ms (cache hit)
+239 http fetch GET 200 https://registry.npmjs.org/responselike 63ms (cache hit)
+240 http fetch GET 200 https://registry.npmjs.org/http2-wrapper 65ms (cache hit)
+241 timing idealTree:node_modules/@distube/youtube-dl Completed in 91ms
+242 timing idealTree:node_modules/dargs Completed in 0ms
+243 timing idealTree:node_modules/detect-libc Completed in 0ms
+244 silly fetch manifest @discordjs/opus@*
+245 silly placeDep ROOT @distube/ytdl-core@4.11.3 OK for: distube@3.3.4 want: ^4.11.1
+246 silly placeDep ROOT @distube/ytpl@1.1.1 OK for: distube@3.3.4 want: ^1.1.1
+247 silly placeDep ROOT @distube/ytsr@1.1.5 OK for: distube@3.3.4 want: ^1.1.5
+248 silly placeDep ROOT prism-media@1.3.3 OK for: distube@3.3.4 want: https://codeload.github.com/distubejs/prism-media/tar.gz/main#workaround.tar.gz
+249 silly fetch manifest m3u8stream@^0.8.6
+250 silly fetch manifest miniget@^4.2.2
+251 silly fetch manifest sax@^1.2.4
+252 silly fetch manifest miniget@^4.2.1
+253 http fetch GET 200 https://registry.npmjs.org/m3u8stream 14ms (cache hit)
+254 http fetch GET 200 https://registry.npmjs.org/miniget 14ms (cache hit)
+255 http fetch GET 200 https://registry.npmjs.org/sax 13ms (cache hit)
+256 timing idealTree:node_modules/distube Completed in 28ms
+257 silly placeDep ROOT m3u8stream@0.8.6 OK for: @distube/ytdl-core@4.11.3 want: ^0.8.6
+258 silly placeDep ROOT miniget@4.2.2 OK for: @distube/ytdl-core@4.11.3 want: ^4.2.2
+259 silly placeDep ROOT sax@1.2.4 OK for: @distube/ytdl-core@4.11.3 want: ^1.2.4
+260 timing idealTree:node_modules/@distube/ytdl-core Completed in 6ms
+261 timing idealTree:node_modules/@distube/ytpl Completed in 0ms
+262 timing idealTree:node_modules/@distube/ytsr Completed in 0ms
+263 silly placeDep ROOT cross-spawn@7.0.3 OK for: execa@5.1.1 want: ^7.0.3
+264 silly placeDep ROOT human-signals@2.1.0 OK for: execa@5.1.1 want: ^2.1.0
+265 silly placeDep ROOT is-stream@2.0.1 OK for: execa@5.1.1 want: ^2.0.0
+266 silly placeDep ROOT merge-stream@2.0.0 OK for: execa@5.1.1 want: ^2.0.0
+267 silly placeDep ROOT npm-run-path@4.0.1 OK for: execa@5.1.1 want: ^4.0.1
+268 silly placeDep ROOT onetime@5.1.2 OK for: execa@5.1.1 want: ^5.1.2
+269 silly placeDep ROOT signal-exit@3.0.7 OK for: execa@5.1.1 want: ^3.0.3
+270 silly placeDep ROOT strip-final-newline@2.0.0 OK for: execa@5.1.1 want: ^2.0.0
+271 silly fetch manifest path-key@^3.1.0
+272 silly fetch manifest shebang-command@^2.0.0
+273 silly fetch manifest which@^2.0.1
+274 silly fetch manifest path-key@^3.0.0
+275 silly fetch manifest mimic-fn@^2.1.0
+276 http fetch GET 200 https://registry.npmjs.org/path-key 13ms (cache hit)
+277 http fetch GET 200 https://registry.npmjs.org/shebang-command 14ms (cache hit)
+278 http fetch GET 200 https://registry.npmjs.org/mimic-fn 12ms (cache hit)
+279 http fetch GET 200 https://registry.npmjs.org/which 14ms (cache hit)
+280 timing idealTree:node_modules/execa Completed in 29ms
+281 silly placeDep ROOT path-key@3.1.1 OK for: cross-spawn@7.0.3 want: ^3.1.0
+282 silly placeDep ROOT shebang-command@2.0.0 OK for: cross-spawn@7.0.3 want: ^2.0.0
+283 silly placeDep ROOT which@2.0.2 OK for: cross-spawn@7.0.3 want: ^2.0.1
+284 silly fetch manifest shebang-regex@^3.0.0
+285 silly fetch manifest isexe@^2.0.0
+286 http fetch GET 200 https://registry.npmjs.org/shebang-regex 6ms (cache hit)
+287 http fetch GET 200 https://registry.npmjs.org/isexe 5ms (cache hit)
+288 timing idealTree:node_modules/cross-spawn Completed in 12ms
+289 silly placeDep ROOT @derhuerst/http-basic@8.2.2 OK for: ffmpeg-static@4.4.1 want: ^8.2.0
+290 silly placeDep ROOT env-paths@2.2.1 OK for: ffmpeg-static@4.4.1 want: ^2.2.0
+291 silly placeDep ROOT progress@2.0.3 OK for: ffmpeg-static@4.4.1 want: ^2.0.3
+292 silly fetch manifest caseless@^0.12.0
+293 silly fetch manifest concat-stream@^1.6.2
+294 silly fetch manifest http-response-object@^3.0.1
+295 silly fetch manifest parse-cache-control@^1.0.1
+296 http fetch GET 200 https://registry.npmjs.org/caseless 12ms (cache hit)
+297 http fetch GET 200 https://registry.npmjs.org/http-response-object 12ms (cache hit)
+298 http fetch GET 200 https://registry.npmjs.org/concat-stream 14ms (cache hit)
+299 http fetch GET 200 https://registry.npmjs.org/parse-cache-control 14ms (cache hit)
+300 timing idealTree:node_modules/ffmpeg-static Completed in 21ms
+301 silly placeDep ROOT caseless@0.12.0 OK for: @derhuerst/http-basic@8.2.2 want: ^0.12.0
+302 silly placeDep ROOT concat-stream@1.6.2 OK for: @derhuerst/http-basic@8.2.2 want: ^1.6.2
+303 silly placeDep ROOT http-response-object@3.0.2 OK for: @derhuerst/http-basic@8.2.2 want: ^3.0.1
+304 silly placeDep ROOT parse-cache-control@1.0.1 OK for: @derhuerst/http-basic@8.2.2 want: ^1.0.1
+305 silly fetch manifest buffer-from@^1.0.0
+306 silly fetch manifest inherits@^2.0.3
+307 silly fetch manifest readable-stream@^2.2.2
+308 silly fetch manifest typedarray@^0.0.6
+309 silly fetch manifest @types/node@^10.0.3
+310 http fetch GET 200 https://registry.npmjs.org/inherits 18ms (cache hit)
+311 http fetch GET 200 https://registry.npmjs.org/buffer-from 19ms (cache hit)
+312 http fetch GET 200 https://registry.npmjs.org/readable-stream 18ms (cache hit)
+313 http fetch GET 200 https://registry.npmjs.org/typedarray 21ms (cache hit)
+314 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 27ms (cache hit)
+315 timing idealTree:node_modules/@derhuerst/http-basic Completed in 84ms
+316 timing idealTree:node_modules/caseless Completed in 0ms
+317 silly placeDep ROOT buffer-from@1.1.2 OK for: concat-stream@1.6.2 want: ^1.0.0
+318 silly placeDep ROOT inherits@2.0.4 OK for: concat-stream@1.6.2 want: ^2.0.3
+319 silly placeDep ROOT readable-stream@2.3.7 OK for: concat-stream@1.6.2 want: ^2.2.2
+320 silly placeDep ROOT typedarray@0.0.6 OK for: concat-stream@1.6.2 want: ^0.0.6
+321 silly fetch manifest core-util-is@~1.0.0
+322 silly fetch manifest isarray@~1.0.0
+323 silly fetch manifest process-nextick-args@~2.0.0
+324 silly fetch manifest safe-buffer@~5.1.1
+325 silly fetch manifest string_decoder@~1.1.1
+326 silly fetch manifest util-deprecate@~1.0.1
+327 http fetch GET 200 https://registry.npmjs.org/safe-buffer 16ms (cache hit)
+328 http fetch GET 200 https://registry.npmjs.org/isarray 19ms (cache hit)
+329 http fetch GET 200 https://registry.npmjs.org/core-util-is 22ms (cache hit)
+330 http fetch GET 200 https://registry.npmjs.org/util-deprecate 18ms (cache hit)
+331 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 22ms (cache hit)
+332 http fetch GET 200 https://registry.npmjs.org/string_decoder 21ms (cache hit)
+333 timing idealTree:node_modules/concat-stream Completed in 29ms
+334 timing idealTree:node_modules/buffer-from Completed in 0ms
+335 timing idealTree:node_modules/env-paths Completed in 0ms
+336 timing idealTree:node_modules/get-stream Completed in 0ms
+337 silly placeDep ROOT @szmarczak/http-timer@4.0.6 OK for: got@11.8.3 want: ^4.0.5
+338 silly placeDep ROOT @types/cacheable-request@6.0.2 OK for: got@11.8.3 want: ^6.0.1
+339 silly placeDep ROOT @types/responselike@1.0.0 OK for: got@11.8.3 want: ^1.0.0
+340 silly placeDep ROOT cacheable-lookup@5.0.4 OK for: got@11.8.3 want: ^5.0.3
+341 silly placeDep ROOT cacheable-request@7.0.2 OK for: got@11.8.3 want: ^7.0.2
+342 silly placeDep ROOT decompress-response@6.0.0 OK for: got@11.8.3 want: ^6.0.0
+343 silly placeDep ROOT http2-wrapper@1.0.3 OK for: got@11.8.3 want: ^1.0.0-beta.5.2
+344 silly placeDep ROOT lowercase-keys@2.0.0 OK for: got@11.8.3 want: ^2.0.0
+345 silly placeDep ROOT p-cancelable@2.1.1 OK for: got@11.8.3 want: ^2.0.0
+346 silly placeDep ROOT responselike@2.0.0 OK for: got@11.8.3 want: ^2.0.0
+347 silly fetch manifest defer-to-connect@^2.0.0
+348 silly fetch manifest @types/http-cache-semantics@*
+349 silly fetch manifest @types/keyv@*
+350 silly fetch manifest clone-response@^1.0.2
+351 silly fetch manifest get-stream@^5.1.0
+352 silly fetch manifest http-cache-semantics@^4.0.0
+353 silly fetch manifest keyv@^4.0.0
+354 silly fetch manifest normalize-url@^6.0.1
+355 silly fetch manifest mimic-response@^3.1.0
+356 silly fetch manifest quick-lru@^5.1.1
+357 silly fetch manifest resolve-alpn@^1.0.0
+358 http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-cache-semantics 35ms (cache hit)
+359 http fetch GET 200 https://registry.npmjs.org/defer-to-connect 37ms (cache hit)
+360 http fetch GET 200 https://registry.npmjs.org/clone-response 35ms (cache hit)
+361 http fetch GET 200 https://registry.npmjs.org/normalize-url 35ms (cache hit)
+362 http fetch GET 200 https://registry.npmjs.org/keyv 38ms (cache hit)
+363 http fetch GET 200 https://registry.npmjs.org/@types%2fkeyv 41ms (cache hit)
+364 http fetch GET 200 https://registry.npmjs.org/mimic-response 37ms (cache hit)
+365 http fetch GET 200 https://registry.npmjs.org/quick-lru 37ms (cache hit)
+366 http fetch GET 200 https://registry.npmjs.org/http-cache-semantics 41ms (cache hit)
+367 http fetch GET 200 https://registry.npmjs.org/resolve-alpn 38ms (cache hit)
+368 timing idealTree:node_modules/got Completed in 56ms
+369 silly placeDep ROOT defer-to-connect@2.0.1 OK for: @szmarczak/http-timer@4.0.6 want: ^2.0.0
+370 timing idealTree:node_modules/@szmarczak/http-timer Completed in 1ms
+371 silly placeDep ROOT @types/http-cache-semantics@4.0.1 OK for: @types/cacheable-request@6.0.2 want: *
+372 silly placeDep ROOT @types/keyv@3.1.4 OK for: @types/cacheable-request@6.0.2 want: *
+373 timing idealTree:node_modules/@types/cacheable-request Completed in 2ms
+374 timing idealTree:node_modules/@types/http-cache-semantics Completed in 0ms
+375 timing idealTree:node_modules/@types/keyv Completed in 0ms
+376 timing idealTree:node_modules/@types/responselike Completed in 0ms
+377 timing idealTree:node_modules/cacheable-lookup Completed in 0ms
+378 silly placeDep ROOT clone-response@1.0.2 OK for: cacheable-request@7.0.2 want: ^1.0.2
+379 silly placeDep node_modules/cacheable-request get-stream@5.2.0 OK for: cacheable-request@7.0.2 want: ^5.1.0
+380 silly placeDep ROOT http-cache-semantics@4.1.0 OK for: cacheable-request@7.0.2 want: ^4.0.0
+381 silly placeDep ROOT keyv@4.2.2 OK for: cacheable-request@7.0.2 want: ^4.0.0
+382 silly placeDep ROOT normalize-url@6.1.0 OK for: cacheable-request@7.0.2 want: ^6.0.1
+383 silly fetch manifest mimic-response@^1.0.0
+384 silly fetch manifest pump@^3.0.0
+385 silly fetch manifest compress-brotli@^1.3.6
+386 silly fetch manifest json-buffer@3.0.1
+387 http fetch GET 200 https://registry.npmjs.org/pump 10ms (cache hit)
+388 http fetch GET 200 https://registry.npmjs.org/compress-brotli 10ms (cache hit)
+389 http fetch GET 200 https://registry.npmjs.org/json-buffer 10ms (cache hit)
+390 timing idealTree:node_modules/cacheable-request Completed in 18ms
+391 silly placeDep ROOT mimic-response@1.0.1 OK for: clone-response@1.0.2 want: ^1.0.0
+392 timing idealTree:node_modules/clone-response Completed in 2ms
+393 silly placeDep node_modules/decompress-response mimic-response@3.1.0 OK for: decompress-response@6.0.0 want: ^3.1.0
+394 timing idealTree:node_modules/decompress-response Completed in 4ms
+395 timing idealTree:node_modules/defer-to-connect Completed in 0ms
+396 timing idealTree:node_modules/http-cache-semantics Completed in 0ms
+397 silly placeDep node_modules/http-response-object @types/node@10.17.60 OK for: http-response-object@3.0.2 want: ^10.0.3
+398 timing idealTree:node_modules/http-response-object Completed in 1ms
+399 silly placeDep ROOT quick-lru@5.1.1 OK for: http2-wrapper@1.0.3 want: ^5.1.1
+400 silly placeDep ROOT resolve-alpn@1.2.1 OK for: http2-wrapper@1.0.3 want: ^1.0.0
+401 timing idealTree:node_modules/http2-wrapper Completed in 2ms
+402 silly placeDep ROOT agent-base@6.0.2 OK for: https-proxy-agent@5.0.1 want: 6
+403 timing idealTree:node_modules/https-proxy-agent Completed in 1ms
+404 timing idealTree:node_modules/agent-base Completed in 0ms
+405 timing idealTree:node_modules/human-signals Completed in 0ms
+406 timing idealTree:node_modules/inherits Completed in 0ms
+407 timing idealTree:node_modules/is-stream Completed in 0ms
+408 timing idealTree:node_modules/is-unix Completed in 0ms
+409 silly placeDep ROOT compress-brotli@1.3.6 OK for: keyv@4.2.2 want: ^1.3.6
+410 silly placeDep ROOT json-buffer@3.0.1 OK for: keyv@4.2.2 want: 3.0.1
+411 silly fetch manifest @types/json-buffer@~3.0.0
+412 http fetch GET 200 https://registry.npmjs.org/@types%2fjson-buffer 9ms (cache hit)
+413 timing idealTree:node_modules/keyv Completed in 13ms
+414 silly placeDep ROOT @types/json-buffer@3.0.0 OK for: compress-brotli@1.3.6 want: ~3.0.0
+415 timing idealTree:node_modules/compress-brotli Completed in 1ms
+416 timing idealTree:node_modules/@types/json-buffer Completed in 0ms
+417 timing idealTree:node_modules/json-buffer Completed in 0ms
+418 timing idealTree:node_modules/lowercase-keys Completed in 0ms
+419 timing idealTree:node_modules/m3u8stream Completed in 0ms
+420 silly placeDep node_modules/make-dir semver@6.3.0 OK for: make-dir@3.1.0 want: ^6.0.0
+421 timing idealTree:node_modules/make-dir Completed in 1ms
+422 timing idealTree:node_modules/merge-stream Completed in 0ms
+423 timing idealTree:node_modules/mimic-response Completed in 0ms
+424 timing idealTree:node_modules/miniget Completed in 0ms
+425 timing idealTree:node_modules/mkdirp Completed in 0ms
+426 timing idealTree:node_modules/node-addon-api Completed in 0ms
+427 silly placeDep ROOT abbrev@1.1.1 OK for: nopt@5.0.0 want: 1
+428 timing idealTree:node_modules/nopt Completed in 1ms
+429 timing idealTree:node_modules/abbrev Completed in 0ms
+430 timing idealTree:node_modules/normalize-url Completed in 1ms
+431 timing idealTree:node_modules/npm-run-path Completed in 0ms
+432 silly placeDep ROOT are-we-there-yet@2.0.0 OK for: npmlog@5.0.1 want: ^2.0.0
+433 silly placeDep ROOT console-control-strings@1.1.0 OK for: npmlog@5.0.1 want: ^1.1.0
+434 silly placeDep ROOT gauge@3.0.2 OK for: npmlog@5.0.1 want: ^3.0.0
+435 silly placeDep ROOT set-blocking@2.0.0 OK for: npmlog@5.0.1 want: ^2.0.0
+436 silly fetch manifest delegates@^1.0.0
+437 silly fetch manifest readable-stream@^3.6.0
+438 silly fetch manifest aproba@^1.0.3 || ^2.0.0
+439 silly fetch manifest color-support@^1.1.2
+440 silly fetch manifest has-unicode@^2.0.1
+441 silly fetch manifest object-assign@^4.1.1
+442 silly fetch manifest string-width@^4.2.3
+443 silly fetch manifest strip-ansi@^6.0.1
+444 silly fetch manifest wide-align@^1.1.2
+445 http fetch GET 200 https://registry.npmjs.org/delegates 25ms (cache hit)
+446 http fetch GET 200 https://registry.npmjs.org/color-support 25ms (cache hit)
+447 http fetch GET 200 https://registry.npmjs.org/aproba 26ms (cache hit)
+448 http fetch GET 200 https://registry.npmjs.org/wide-align 22ms (cache hit)
+449 http fetch GET 200 https://registry.npmjs.org/object-assign 25ms (cache hit)
+450 http fetch GET 200 https://registry.npmjs.org/strip-ansi 25ms (cache hit)
+451 http fetch GET 200 https://registry.npmjs.org/string-width 26ms (cache hit)
+452 http fetch GET 200 https://registry.npmjs.org/has-unicode 29ms (cache hit)
+453 timing idealTree:node_modules/npmlog Completed in 37ms
+454 silly placeDep ROOT delegates@1.0.0 OK for: are-we-there-yet@2.0.0 want: ^1.0.0
+455 silly placeDep node_modules/are-we-there-yet readable-stream@3.6.0 OK for: are-we-there-yet@2.0.0 want: ^3.6.0
+456 silly fetch manifest string_decoder@^1.1.1
+457 silly fetch manifest util-deprecate@^1.0.1
+458 timing idealTree:node_modules/are-we-there-yet Completed in 5ms
+459 timing idealTree:node_modules/console-control-strings Completed in 0ms
+460 timing idealTree:node_modules/delegates Completed in 0ms
+461 silly placeDep ROOT aproba@2.0.0 OK for: gauge@3.0.2 want: ^1.0.3 || ^2.0.0
+462 silly placeDep ROOT color-support@1.1.3 OK for: gauge@3.0.2 want: ^1.1.2
+463 silly placeDep ROOT has-unicode@2.0.1 OK for: gauge@3.0.2 want: ^2.0.1
+464 silly placeDep ROOT object-assign@4.1.1 OK for: gauge@3.0.2 want: ^4.1.1
+465 silly placeDep ROOT string-width@4.2.3 OK for: gauge@3.0.2 want: ^4.2.3
+466 silly placeDep ROOT strip-ansi@6.0.1 OK for: gauge@3.0.2 want: ^6.0.1
+467 silly placeDep ROOT wide-align@1.1.5 OK for: gauge@3.0.2 want: ^1.1.2
+468 silly fetch manifest emoji-regex@^8.0.0
+469 silly fetch manifest is-fullwidth-code-point@^3.0.0
+470 silly fetch manifest ansi-regex@^5.0.1
+471 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 14ms (cache hit)
+472 http fetch GET 200 https://registry.npmjs.org/emoji-regex 15ms (cache hit)
+473 http fetch GET 200 https://registry.npmjs.org/ansi-regex 14ms (cache hit)
+474 timing idealTree:node_modules/gauge Completed in 25ms
+475 timing idealTree:node_modules/aproba Completed in 0ms
+476 timing idealTree:node_modules/color-support Completed in 0ms
+477 timing idealTree:node_modules/has-unicode Completed in 0ms
+478 timing idealTree:node_modules/object-assign Completed in 0ms
+479 silly placeDep ROOT mimic-fn@2.1.0 OK for: onetime@5.1.2 want: ^2.1.0
+480 timing idealTree:node_modules/onetime Completed in 2ms
+481 timing idealTree:node_modules/mimic-fn Completed in 0ms
+482 timing idealTree:node_modules/p-cancelable Completed in 0ms
+483 silly placeDep ROOT p-timeout@3.2.0 OK for: p-event@4.2.0 want: ^3.1.0
+484 silly fetch manifest p-finally@^1.0.0
+485 http fetch GET 200 https://registry.npmjs.org/p-finally 3ms (cache hit)
+486 timing idealTree:node_modules/p-event Completed in 7ms
+487 timing idealTree:node_modules/p-reflect Completed in 0ms
+488 silly placeDep ROOT p-finally@1.0.0 OK for: p-timeout@3.2.0 want: ^1.0.0
+489 timing idealTree:node_modules/p-timeout Completed in 1ms
+490 timing idealTree:node_modules/p-finally Completed in 0ms
+491 timing idealTree:node_modules/parse-cache-control Completed in 0ms
+492 timing idealTree:node_modules/path-key Completed in 0ms
+493 timing idealTree:node_modules/prism-media Completed in 0ms
+494 timing idealTree:node_modules/progress Completed in 0ms
+495 timing idealTree:node_modules/quick-lru Completed in 0ms
+496 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.7 want: ~1.0.0
+497 silly placeDep ROOT isarray@1.0.0 OK for: readable-stream@2.3.7 want: ~1.0.0
+498 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.7 want: ~2.0.0
+499 silly placeDep ROOT safe-buffer@5.1.2 OK for: readable-stream@2.3.7 want: ~5.1.1
+500 silly placeDep ROOT string_decoder@1.1.1 OK for: readable-stream@2.3.7 want: ~1.1.1
+501 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.7 want: ~1.0.1
+502 timing idealTree:node_modules/readable-stream Completed in 6ms
+503 timing idealTree:node_modules/core-util-is Completed in 0ms
+504 timing idealTree:node_modules/isarray Completed in 0ms
+505 timing idealTree:node_modules/process-nextick-args Completed in 0ms
+506 timing idealTree:node_modules/resolve-alpn Completed in 0ms
+507 timing idealTree:node_modules/responselike Completed in 0ms
+508 silly placeDep ROOT glob@7.2.0 OK for: rimraf@3.0.2 want: ^7.1.3
+509 silly fetch manifest fs.realpath@^1.0.0
+510 silly fetch manifest inflight@^1.0.4
+511 silly fetch manifest minimatch@^3.0.4
+512 silly fetch manifest once@^1.3.0
+513 silly fetch manifest path-is-absolute@^1.0.0
+514 http fetch GET 200 https://registry.npmjs.org/inflight 15ms (cache hit)
+515 http fetch GET 200 https://registry.npmjs.org/fs.realpath 23ms (cache hit)
+516 http fetch GET 200 https://registry.npmjs.org/minimatch 23ms (cache hit)
+517 http fetch GET 200 https://registry.npmjs.org/once 24ms (cache hit)
+518 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 24ms (cache hit)
+519 timing idealTree:node_modules/rimraf Completed in 31ms
+520 silly placeDep ROOT fs.realpath@1.0.0 OK for: glob@7.2.0 want: ^1.0.0
+521 silly placeDep ROOT inflight@1.0.6 OK for: glob@7.2.0 want: ^1.0.4
+522 silly placeDep ROOT minimatch@3.1.2 OK for: glob@7.2.0 want: ^3.0.4
+523 silly placeDep ROOT once@1.4.0 OK for: glob@7.2.0 want: ^1.3.0
+524 silly placeDep ROOT path-is-absolute@1.0.1 OK for: glob@7.2.0 want: ^1.0.0
+525 silly fetch manifest wrappy@1
+526 silly fetch manifest brace-expansion@^1.1.7
+527 http fetch GET 200 https://registry.npmjs.org/wrappy 6ms (cache hit)
+528 http fetch GET 200 https://registry.npmjs.org/brace-expansion 7ms (cache hit)
+529 timing idealTree:node_modules/glob Completed in 14ms
+530 timing idealTree:node_modules/fs.realpath Completed in 0ms
+531 silly placeDep ROOT wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+532 timing idealTree:node_modules/inflight Completed in 2ms
+533 silly placeDep ROOT brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+534 silly fetch manifest balanced-match@^1.0.0
+535 silly fetch manifest concat-map@0.0.1
+536 http fetch GET 200 https://registry.npmjs.org/balanced-match 6ms (cache hit)
+537 http fetch GET 200 https://registry.npmjs.org/concat-map 5ms (cache hit)
+538 timing idealTree:node_modules/minimatch Completed in 9ms
+539 silly placeDep ROOT balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+540 silly placeDep ROOT concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+541 timing idealTree:node_modules/brace-expansion Completed in 2ms
+542 timing idealTree:node_modules/balanced-match Completed in 0ms
+543 timing idealTree:node_modules/concat-map Completed in 0ms
+544 timing idealTree:node_modules/once Completed in 0ms
+545 timing idealTree:node_modules/path-is-absolute Completed in 0ms
+546 timing idealTree:node_modules/safe-buffer Completed in 1ms
+547 timing idealTree:node_modules/sax Completed in 0ms
+548 silly placeDep ROOT lru-cache@6.0.0 OK for: semver@7.3.7 want: ^6.0.0
+549 timing idealTree:node_modules/semver Completed in 1ms
+550 silly placeDep ROOT yallist@4.0.0 OK for: lru-cache@6.0.0 want: ^4.0.0
+551 timing idealTree:node_modules/lru-cache Completed in 1ms
+552 timing idealTree:node_modules/set-blocking Completed in 0ms
+553 silly placeDep ROOT shebang-regex@3.0.0 OK for: shebang-command@2.0.0 want: ^3.0.0
+554 timing idealTree:node_modules/shebang-command Completed in 1ms
+555 timing idealTree:node_modules/shebang-regex Completed in 0ms
+556 timing idealTree:node_modules/signal-exit Completed in 0ms
+557 silly placeDep ROOT axios@0.21.4 OK for: soundcloud.ts@0.4.5 want: ^0.21.1
+558 silly fetch manifest follow-redirects@^1.14.0
+559 http fetch GET 200 https://registry.npmjs.org/follow-redirects 4ms (cache hit)
+560 timing idealTree:node_modules/soundcloud.ts Completed in 7ms
+561 silly placeDep ROOT follow-redirects@1.14.9 OK for: axios@0.21.4 want: ^1.14.0
+562 timing idealTree:node_modules/axios Completed in 1ms
+563 timing idealTree:node_modules/follow-redirects Completed in 0ms
+564 timing idealTree:node_modules/spotify-uri Completed in 0ms
+565 silly placeDep ROOT cross-fetch@3.1.5 OK for: spotify-url-info@2.2.9 want: ~3.1.4
+566 silly placeDep ROOT himalaya@1.1.0 OK for: spotify-url-info@2.2.9 want: ~1.1.0
+567 timing idealTree:node_modules/spotify-url-info Completed in 3ms
+568 timing idealTree:node_modules/cross-fetch Completed in 0ms
+569 timing idealTree:node_modules/himalaya Completed in 0ms
+570 silly placeDep ROOT superagent@6.1.0 OK for: spotify-web-api-node@5.0.2 want: ^6.1.0
+571 silly fetch manifest component-emitter@^1.3.0
+572 silly fetch manifest cookiejar@^2.1.2
+573 silly fetch manifest fast-safe-stringify@^2.0.7
+574 silly fetch manifest formidable@^1.2.2
+575 silly fetch manifest methods@^1.1.2
+576 silly fetch manifest mime@^2.4.6
+577 silly fetch manifest qs@^6.9.4
+578 http fetch GET 200 https://registry.npmjs.org/component-emitter 25ms (cache hit)
+579 http fetch GET 200 https://registry.npmjs.org/methods 22ms (cache hit)
+580 http fetch GET 200 https://registry.npmjs.org/fast-safe-stringify 26ms (cache hit)
+581 http fetch GET 200 https://registry.npmjs.org/formidable 25ms (cache hit)
+582 http fetch GET 200 https://registry.npmjs.org/cookiejar 28ms (cache hit)
+583 http fetch GET 200 https://registry.npmjs.org/mime 26ms (cache hit)
+584 http fetch GET 200 https://registry.npmjs.org/qs 27ms (cache hit)
+585 timing idealTree:node_modules/spotify-web-api-node Completed in 34ms
+586 timing idealTree:node_modules/string_decoder Completed in 1ms
+587 silly placeDep ROOT emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+588 silly placeDep ROOT is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+589 timing idealTree:node_modules/string-width Completed in 2ms
+590 timing idealTree:node_modules/emoji-regex Completed in 0ms
+591 timing idealTree:node_modules/is-fullwidth-code-point Completed in 0ms
+592 silly placeDep ROOT ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+593 timing idealTree:node_modules/strip-ansi Completed in 1ms
+594 timing idealTree:node_modules/ansi-regex Completed in 0ms
+595 timing idealTree:node_modules/strip-final-newline Completed in 0ms
+596 silly placeDep ROOT component-emitter@1.3.0 OK for: superagent@6.1.0 want: ^1.3.0
+597 silly placeDep ROOT cookiejar@2.1.3 OK for: superagent@6.1.0 want: ^2.1.2
+598 silly placeDep ROOT fast-safe-stringify@2.1.1 OK for: superagent@6.1.0 want: ^2.0.7
+599 silly placeDep ROOT formidable@1.2.6 OK for: superagent@6.1.0 want: ^1.2.2
+600 silly placeDep ROOT methods@1.1.2 OK for: superagent@6.1.0 want: ^1.1.2
+601 silly placeDep ROOT mime@2.6.0 OK for: superagent@6.1.0 want: ^2.4.6
+602 silly placeDep ROOT qs@6.10.3 OK for: superagent@6.1.0 want: ^6.9.4
+603 silly placeDep node_modules/superagent readable-stream@3.6.0 OK for: superagent@6.1.0 want: ^3.6.0
+604 silly fetch manifest side-channel@^1.0.4
+605 http fetch GET 200 https://registry.npmjs.org/side-channel 5ms (cache hit)
+606 timing idealTree:node_modules/superagent Completed in 26ms
+607 timing idealTree:node_modules/component-emitter Completed in 0ms
+608 timing idealTree:node_modules/cookiejar Completed in 0ms
+609 timing idealTree:node_modules/fast-safe-stringify Completed in 0ms
+610 timing idealTree:node_modules/formidable Completed in 0ms
+611 timing idealTree:node_modules/methods Completed in 0ms
+612 timing idealTree:node_modules/mime Completed in 0ms
+613 silly placeDep ROOT side-channel@1.0.4 OK for: qs@6.10.3 want: ^1.0.4
+614 silly fetch manifest call-bind@^1.0.0
+615 silly fetch manifest get-intrinsic@^1.0.2
+616 silly fetch manifest object-inspect@^1.9.0
+617 http fetch GET 200 https://registry.npmjs.org/call-bind 12ms (cache hit)
+618 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 12ms (cache hit)
+619 http fetch GET 200 https://registry.npmjs.org/object-inspect 12ms (cache hit)
+620 timing idealTree:node_modules/qs Completed in 15ms
+621 silly placeDep ROOT call-bind@1.0.2 OK for: side-channel@1.0.4 want: ^1.0.0
+622 silly placeDep ROOT get-intrinsic@1.1.1 OK for: side-channel@1.0.4 want: ^1.0.2
+623 silly placeDep ROOT object-inspect@1.12.0 OK for: side-channel@1.0.4 want: ^1.9.0
+624 silly fetch manifest function-bind@^1.1.1
+625 silly fetch manifest has@^1.0.3
+626 silly fetch manifest has-symbols@^1.0.1
+627 http fetch GET 200 https://registry.npmjs.org/function-bind 9ms (cache hit)
+628 http fetch GET 200 https://registry.npmjs.org/has 8ms (cache hit)
+629 http fetch GET 200 https://registry.npmjs.org/has-symbols 8ms (cache hit)
+630 timing idealTree:node_modules/side-channel Completed in 15ms
+631 silly placeDep ROOT function-bind@1.1.1 OK for: call-bind@1.0.2 want: ^1.1.1
+632 timing idealTree:node_modules/call-bind Completed in 1ms
+633 timing idealTree:node_modules/function-bind Completed in 0ms
+634 silly placeDep ROOT has@1.0.3 OK for: get-intrinsic@1.1.1 want: ^1.0.3
+635 silly placeDep ROOT has-symbols@1.0.3 OK for: get-intrinsic@1.1.1 want: ^1.0.1
+636 timing idealTree:node_modules/get-intrinsic Completed in 2ms
+637 timing idealTree:node_modules/has Completed in 1ms
+638 timing idealTree:node_modules/has-symbols Completed in 0ms
+639 timing idealTree:node_modules/object-inspect Completed in 0ms
+640 silly placeDep ROOT chownr@2.0.0 OK for: tar@6.1.11 want: ^2.0.0
+641 silly placeDep ROOT fs-minipass@2.1.0 OK for: tar@6.1.11 want: ^2.0.0
+642 silly placeDep ROOT minipass@3.1.6 OK for: tar@6.1.11 want: ^3.0.0
+643 silly placeDep ROOT minizlib@2.1.2 OK for: tar@6.1.11 want: ^2.1.1
+644 timing idealTree:node_modules/tar Completed in 4ms
+645 timing idealTree:node_modules/chownr Completed in 0ms
+646 timing idealTree:node_modules/fs-minipass Completed in 0ms
+647 timing idealTree:node_modules/minipass Completed in 0ms
+648 timing idealTree:node_modules/minizlib Completed in 0ms
+649 timing idealTree:node_modules/tiny-typed-emitter Completed in 0ms
+650 timing idealTree:node_modules/typedarray Completed in 0ms
+651 timing idealTree:node_modules/util-deprecate Completed in 0ms
+652 silly placeDep ROOT isexe@2.0.0 OK for: which@2.0.2 want: ^2.0.0
+653 timing idealTree:node_modules/which Completed in 1ms
+654 timing idealTree:node_modules/isexe Completed in 0ms
+655 timing idealTree:node_modules/wide-align Completed in 0ms
+656 timing idealTree:node_modules/wrappy Completed in 0ms
+657 timing idealTree:node_modules/yallist Completed in 0ms
+658 timing idealTree:node_modules/@discordjs/builders/node_modules/discord-api-types Completed in 0ms
+659 timing idealTree:node_modules/@discordjs/voice/node_modules/discord-api-types Completed in 0ms
+660 timing idealTree:node_modules/are-we-there-yet/node_modules/readable-stream Completed in 0ms
+661 silly placeDep ROOT pump@3.0.0 OK for: get-stream@5.2.0 want: ^3.0.0
+662 silly fetch manifest end-of-stream@^1.1.0
+663 http fetch GET 200 https://registry.npmjs.org/end-of-stream 4ms (cache hit)
+664 timing idealTree:node_modules/cacheable-request/node_modules/get-stream Completed in 6ms
+665 silly placeDep ROOT end-of-stream@1.4.4 OK for: pump@3.0.0 want: ^1.1.0
+666 timing idealTree:node_modules/pump Completed in 1ms
+667 timing idealTree:node_modules/end-of-stream Completed in 0ms
+668 timing idealTree:node_modules/decompress-response/node_modules/mimic-response Completed in 0ms
+669 timing idealTree:node_modules/http-response-object/node_modules/@types/node Completed in 0ms
+670 timing idealTree:node_modules/make-dir/node_modules/semver Completed in 0ms
+671 timing idealTree:node_modules/superagent/node_modules/readable-stream Completed in 1ms
+672 timing idealTree:buildDeps Completed in 2021ms
+673 timing idealTree:fixDepFlags Completed in 5ms
+674 warn EBADENGINE Unsupported engine {
+674 warn EBADENGINE   package: '@discordjs/rest@0.4.1',
+674 warn EBADENGINE   required: { node: '>=16.9.0' },
+674 warn EBADENGINE   current: { node: 'v16.6.1', npm: '7.20.3' }
+674 warn EBADENGINE }
+675 warn EBADENGINE Unsupported engine {
+675 warn EBADENGINE   package: '@discordjs/collection@0.7.0-dev.1650931751-df64d3e',
+675 warn EBADENGINE   required: { node: '>=16.9.0' },
+675 warn EBADENGINE   current: { node: 'v16.6.1', npm: '7.20.3' }
+675 warn EBADENGINE }
+676 warn EBADENGINE Unsupported engine {
+676 warn EBADENGINE   package: '@discordjs/voice@0.8.0',
+676 warn EBADENGINE   required: { node: '>=16.9.0' },
+676 warn EBADENGINE   current: { node: 'v16.6.1', npm: '7.20.3' }
+676 warn EBADENGINE }
+677 timing idealTree Completed in 2115ms
+678 timing reify:loadTrees Completed in 2116ms
+679 timing reify:diffTrees Completed in 7ms
+680 silly reify mark retired [ '/home/container/node_modules/abbrev' ]
+681 silly reify mark retired [ '/home/container/node_modules/agent-base' ]
+682 silly reify mark retired [ '/home/container/node_modules/ansi-regex' ]
+683 silly reify mark retired [ '/home/container/node_modules/aproba' ]
+684 silly reify mark retired [ '/home/container/node_modules/are-we-there-yet' ]
+685 silly reify mark retired [ '/home/container/node_modules/axios' ]
+686 silly reify mark retired [ '/home/container/node_modules/balanced-match' ]
+687 silly reify mark retired [ '/home/container/node_modules/brace-expansion' ]
+688 silly reify mark retired [ '/home/container/node_modules/buffer-from' ]
+689 silly reify mark retired [ '/home/container/node_modules/cacheable-lookup' ]
+690 silly reify mark retired [ '/home/container/node_modules/cacheable-request' ]
+691 silly reify mark retired [ '/home/container/node_modules/call-bind' ]
+692 silly reify mark retired [ '/home/container/node_modules/caseless' ]
+693 silly reify mark retired [ '/home/container/node_modules/chownr' ]
+694 silly reify mark retired [ '/home/container/node_modules/clone-response' ]
+695 silly reify mark retired [ '/home/container/node_modules/color-support' ]
+696 silly reify mark retired [ '/home/container/node_modules/component-emitter' ]
+697 silly reify mark retired [ '/home/container/node_modules/compress-brotli' ]
+698 silly reify mark retired [ '/home/container/node_modules/concat-map' ]
+699 silly reify mark retired [ '/home/container/node_modules/concat-stream' ]
+700 silly reify mark retired [ '/home/container/node_modules/console-control-strings' ]
+701 silly reify mark retired [ '/home/container/node_modules/cookiejar' ]
+702 silly reify mark retired [ '/home/container/node_modules/core-util-is' ]
+703 silly reify mark retired [ '/home/container/node_modules/cross-fetch' ]
+704 silly reify mark retired [ '/home/container/node_modules/cross-spawn' ]
+705 silly reify mark retired [ '/home/container/node_modules/dargs' ]
+706 silly reify mark retired [ '/home/container/node_modules/decompress-response' ]
+707 silly reify mark retired [ '/home/container/node_modules/defer-to-connect' ]
+708 silly reify mark retired [ '/home/container/node_modules/delegates' ]
+709 silly reify mark retired [ '/home/container/node_modules/detect-libc' ]
+710 silly reify mark retired [ '/home/container/node_modules/distube' ]
+711 silly reify mark retired [ '/home/container/node_modules/emoji-regex' ]
+712 silly reify mark retired [ '/home/container/node_modules/end-of-stream' ]
+713 silly reify mark retired [ '/home/container/node_modules/env-paths' ]
+714 silly reify mark retired [ '/home/container/node_modules/execa' ]
+715 silly reify mark retired [ '/home/container/node_modules/fast-safe-stringify' ]
+716 silly reify mark retired [ '/home/container/node_modules/ffmpeg-static' ]
+717 silly reify mark retired [ '/home/container/node_modules/follow-redirects' ]
+718 silly reify mark retired [ '/home/container/node_modules/formidable' ]
+719 silly reify mark retired [ '/home/container/node_modules/fs-minipass' ]
+720 silly reify mark retired [ '/home/container/node_modules/fs.realpath' ]
+721 silly reify mark retired [ '/home/container/node_modules/function-bind' ]
+722 silly reify mark retired [ '/home/container/node_modules/gauge' ]
+723 silly reify mark retired [ '/home/container/node_modules/get-intrinsic' ]
+724 silly reify mark retired [ '/home/container/node_modules/get-stream' ]
+725 silly reify mark retired [ '/home/container/node_modules/glob' ]
+726 silly reify mark retired [ '/home/container/node_modules/got' ]
+727 silly reify mark retired [ '/home/container/node_modules/has' ]
+728 silly reify mark retired [ '/home/container/node_modules/has-symbols' ]
+729 silly reify mark retired [ '/home/container/node_modules/has-unicode' ]
+730 silly reify mark retired [ '/home/container/node_modules/himalaya' ]
+731 silly reify mark retired [ '/home/container/node_modules/http-cache-semantics' ]
+732 silly reify mark retired [ '/home/container/node_modules/http-response-object' ]
+733 silly reify mark retired [ '/home/container/node_modules/http2-wrapper' ]
+734 silly reify mark retired [ '/home/container/node_modules/https-proxy-agent' ]
+735 silly reify mark retired [ '/home/container/node_modules/human-signals' ]
+736 silly reify mark retired [ '/home/container/node_modules/inflight' ]
+737 silly reify mark retired [ '/home/container/node_modules/inherits' ]
+738 silly reify mark retired [ '/home/container/node_modules/is-fullwidth-code-point' ]
+739 silly reify mark retired [ '/home/container/node_modules/is-stream' ]
+740 silly reify mark retired [ '/home/container/node_modules/is-unix' ]
+741 silly reify mark retired [ '/home/container/node_modules/isarray' ]
+742 silly reify mark retired [ '/home/container/node_modules/isexe' ]
+743 silly reify mark retired [ '/home/container/node_modules/json-buffer' ]
+744 silly reify mark retired [ '/home/container/node_modules/keyv' ]
+745 silly reify mark retired [ '/home/container/node_modules/lowercase-keys' ]
+746 silly reify mark retired [ '/home/container/node_modules/lru-cache' ]
+747 silly reify mark retired [ '/home/container/node_modules/m3u8stream' ]
+748 silly reify mark retired [ '/home/container/node_modules/make-dir' ]
+749 silly reify mark retired [ '/home/container/node_modules/merge-stream' ]
+750 silly reify mark retired [ '/home/container/node_modules/methods' ]
+751 silly reify mark retired [ '/home/container/node_modules/mime' ]
+752 silly reify mark retired [ '/home/container/node_modules/mimic-fn' ]
+753 silly reify mark retired [ '/home/container/node_modules/mimic-response' ]
+754 silly reify mark retired [ '/home/container/node_modules/miniget' ]
+755 silly reify mark retired [ '/home/container/node_modules/minimatch' ]
+756 silly reify mark retired [ '/home/container/node_modules/minipass' ]
+757 silly reify mark retired [ '/home/container/node_modules/minizlib' ]
+758 silly reify mark retired [ '/home/container/node_modules/mkdirp' ]
+759 silly reify mark retired [ '/home/container/node_modules/node-addon-api' ]
+760 silly reify mark retired [ '/home/container/node_modules/nopt' ]
+761 silly reify mark retired [ '/home/container/node_modules/normalize-url' ]
+762 silly reify mark retired [ '/home/container/node_modules/npm-run-path' ]
+763 silly reify mark retired [ '/home/container/node_modules/npmlog' ]
+764 silly reify mark retired [ '/home/container/node_modules/object-assign' ]
+765 silly reify mark retired [ '/home/container/node_modules/object-inspect' ]
+766 silly reify mark retired [ '/home/container/node_modules/once' ]
+767 silly reify mark retired [ '/home/container/node_modules/onetime' ]
+768 silly reify mark retired [ '/home/container/node_modules/p-cancelable' ]
+769 silly reify mark retired [ '/home/container/node_modules/p-event' ]
+770 silly reify mark retired [ '/home/container/node_modules/p-finally' ]
+771 silly reify mark retired [ '/home/container/node_modules/p-reflect' ]
+772 silly reify mark retired [ '/home/container/node_modules/p-timeout' ]
+773 silly reify mark retired [ '/home/container/node_modules/parse-cache-control' ]
+774 silly reify mark retired [ '/home/container/node_modules/path-is-absolute' ]
+775 silly reify mark retired [ '/home/container/node_modules/path-key' ]
+776 silly reify mark retired [ '/home/container/node_modules/prism-media' ]
+777 silly reify mark retired [ '/home/container/node_modules/process-nextick-args' ]
+778 silly reify mark retired [ '/home/container/node_modules/progress' ]
+779 silly reify mark retired [ '/home/container/node_modules/pump' ]
+780 silly reify mark retired [ '/home/container/node_modules/qs' ]
+781 silly reify mark retired [ '/home/container/node_modules/quick-lru' ]
+782 silly reify mark retired [ '/home/container/node_modules/readable-stream' ]
+783 silly reify mark retired [ '/home/container/node_modules/resolve-alpn' ]
+784 silly reify mark retired [ '/home/container/node_modules/responselike' ]
+785 silly reify mark retired [ '/home/container/node_modules/rimraf' ]
+786 silly reify mark retired [ '/home/container/node_modules/safe-buffer' ]
+787 silly reify mark retired [ '/home/container/node_modules/sax' ]
+788 silly reify mark retired [ '/home/container/node_modules/semver' ]
+789 silly reify mark retired [ '/home/container/node_modules/set-blocking' ]
+790 silly reify mark retired [ '/home/container/node_modules/shebang-command' ]
+791 silly reify mark retired [ '/home/container/node_modules/shebang-regex' ]
+792 silly reify mark retired [ '/home/container/node_modules/side-channel' ]
+793 silly reify mark retired [ '/home/container/node_modules/signal-exit' ]
+794 silly reify mark retired [ '/home/container/node_modules/soundcloud.ts' ]
+795 silly reify mark retired [ '/home/container/node_modules/spotify-uri' ]
+796 silly reify mark retired [ '/home/container/node_modules/spotify-url-info' ]
+797 silly reify mark retired [ '/home/container/node_modules/spotify-web-api-node' ]
+798 silly reify mark retired [ '/home/container/node_modules/string-width' ]
+799 silly reify mark retired [ '/home/container/node_modules/string_decoder' ]
+800 silly reify mark retired [ '/home/container/node_modules/strip-ansi' ]
+801 silly reify mark retired [ '/home/container/node_modules/strip-final-newline' ]
+802 silly reify mark retired [ '/home/container/node_modules/superagent' ]
+803 silly reify mark retired [ '/home/container/node_modules/tar' ]
+804 silly reify mark retired [ '/home/container/node_modules/tiny-typed-emitter' ]
+805 silly reify mark retired [ '/home/container/node_modules/typedarray' ]
+806 silly reify mark retired [ '/home/container/node_modules/util-deprecate' ]
+807 silly reify mark retired [ '/home/container/node_modules/which' ]
+808 silly reify mark retired [ '/home/container/node_modules/wide-align' ]
+809 silly reify mark retired [ '/home/container/node_modules/wrappy' ]
+810 silly reify mark retired [ '/home/container/node_modules/yallist' ]
+811 silly reify mark retired [ '/home/container/node_modules/@derhuerst/http-basic' ]
+812 silly reify mark retired [ '/home/container/node_modules/@discordjs/builders' ]
+813 silly reify mark retired [ '/home/container/node_modules/@discordjs/node-pre-gyp' ]
+814 silly reify mark retired [ '/home/container/node_modules/@discordjs/opus' ]
+815 silly reify mark retired [ '/home/container/node_modules/@discordjs/voice' ]
+816 silly reify mark retired [ '/home/container/node_modules/@distube/soundcloud' ]
+817 silly reify mark retired [ '/home/container/node_modules/@distube/spotify' ]
+818 silly reify mark retired [ '/home/container/node_modules/@distube/youtube-dl' ]
+819 silly reify mark retired [ '/home/container/node_modules/@distube/yt-dlp' ]
+820 silly reify mark retired [ '/home/container/node_modules/@distube/ytdl-core' ]
+821 silly reify mark retired [ '/home/container/node_modules/@distube/ytpl' ]
+822 silly reify mark retired [ '/home/container/node_modules/@distube/ytsr' ]
+823 silly reify mark retired [ '/home/container/node_modules/@szmarczak/http-timer' ]
+824 silly reify mark retired [ '/home/container/node_modules/@types/cacheable-request' ]
+825 silly reify mark retired [ '/home/container/node_modules/@types/http-cache-semantics' ]
+826 silly reify mark retired [ '/home/container/node_modules/@types/json-buffer' ]
+827 silly reify mark retired [ '/home/container/node_modules/@types/keyv' ]
+828 silly reify mark retired [ '/home/container/node_modules/@types/responselike' ]
+829 silly reify moves {
+829 silly reify   '/home/container/node_modules/abbrev': '/home/container/node_modules/.abbrev-tzOA6dXx',
+829 silly reify   '/home/container/node_modules/agent-base': '/home/container/node_modules/.agent-base-hv9OiSsS',
+829 silly reify   '/home/container/node_modules/ansi-regex': '/home/container/node_modules/.ansi-regex-QIgIo76j',
+829 silly reify   '/home/container/node_modules/aproba': '/home/container/node_modules/.aproba-khtXGtK7',
+829 silly reify   '/home/container/node_modules/are-we-there-yet': '/home/container/node_modules/.are-we-there-yet-TonM6hLu',
+829 silly reify   '/home/container/node_modules/axios': '/home/container/node_modules/.axios-uoh4i5Su',
+829 silly reify   '/home/container/node_modules/balanced-match': '/home/container/node_modules/.balanced-match-RMyPnEyv',
+829 silly reify   '/home/container/node_modules/brace-expansion': '/home/container/node_modules/.brace-expansion-oXZiDMfv',
+829 silly reify   '/home/container/node_modules/buffer-from': '/home/container/node_modules/.buffer-from-WQZTNaoC',
+829 silly reify   '/home/container/node_modules/cacheable-lookup': '/home/container/node_modules/.cacheable-lookup-92EFs9VD',
+829 silly reify   '/home/container/node_modules/cacheable-request': '/home/container/node_modules/.cacheable-request-WJ2E8qQZ',
+829 silly reify   '/home/container/node_modules/call-bind': '/home/container/node_modules/.call-bind-4vXvLvdH',
+829 silly reify   '/home/container/node_modules/caseless': '/home/container/node_modules/.caseless-EZvT9pnA',
+829 silly reify   '/home/container/node_modules/chownr': '/home/container/node_modules/.chownr-8v0cvYsA',
+829 silly reify   '/home/container/node_modules/clone-response': '/home/container/node_modules/.clone-response-p0sWiava',
+829 silly reify   '/home/container/node_modules/color-support': '/home/container/node_modules/.color-support-5ac2lo4P',
+829 silly reify   '/home/container/node_modules/component-emitter': '/home/container/node_modules/.component-emitter-Q20Gpj2C',
+829 silly reify   '/home/container/node_modules/compress-brotli': '/home/container/node_modules/.compress-brotli-uLCGpR6p',
+829 silly reify   '/home/container/node_modules/concat-map': '/home/container/node_modules/.concat-map-LW1qSY34',
+829 silly reify   '/home/container/node_modules/concat-stream': '/home/container/node_modules/.concat-stream-HJ2Tz6kf',
+829 silly reify   '/home/container/node_modules/console-control-strings': '/home/container/node_modules/.console-control-strings-qqCcqiko',
+829 silly reify   '/home/container/node_modules/cookiejar': '/home/container/node_modules/.cookiejar-2vGmZyj8',
+829 silly reify   '/home/container/node_modules/core-util-is': '/home/container/node_modules/.core-util-is-FPmPGzE4',
+829 silly reify   '/home/container/node_modules/cross-fetch': '/home/container/node_modules/.cross-fetch-O3LN33YX',
+829 silly reify   '/home/container/node_modules/cross-spawn': '/home/container/node_modules/.cross-spawn-10v1tN4c',
+829 silly reify   '/home/container/node_modules/dargs': '/home/container/node_modules/.dargs-iJqOnlJn',
+829 silly reify   '/home/container/node_modules/decompress-response': '/home/container/node_modules/.decompress-response-gK7nIOpX',
+829 silly reify   '/home/container/node_modules/defer-to-connect': '/home/container/node_modules/.defer-to-connect-2SXAz6qG',
+829 silly reify   '/home/container/node_modules/delegates': '/home/container/node_modules/.delegates-xf2HGepN',
+829 silly reify   '/home/container/node_modules/detect-libc': '/home/container/node_modules/.detect-libc-yHqZA5ne',
+829 silly reify   '/home/container/node_modules/distube': '/home/container/node_modules/.distube-W5udAJ5Q',
+829 silly reify   '/home/container/node_modules/emoji-regex': '/home/container/node_modules/.emoji-regex-NTbOPFJk',
+829 silly reify   '/home/container/node_modules/end-of-stream': '/home/container/node_modules/.end-of-stream-R78X1ioQ',
+829 silly reify   '/home/container/node_modules/env-paths': '/home/container/node_modules/.env-paths-wXdkt7XZ',
+829 silly reify   '/home/container/node_modules/execa': '/home/container/node_modules/.execa-lomFThK0',
+829 silly reify   '/home/container/node_modules/fast-safe-stringify': '/home/container/node_modules/.fast-safe-stringify-LJmfpBoT',
+829 silly reify   '/home/container/node_modules/ffmpeg-static': '/home/container/node_modules/.ffmpeg-static-i8Eb2Whz',
+829 silly reify   '/home/container/node_modules/follow-redirects': '/home/container/node_modules/.follow-redirects-9sSfRfDx',
+829 silly reify   '/home/container/node_modules/formidable': '/home/container/node_modules/.formidable-2ptcq9rS',
+829 silly reify   '/home/container/node_modules/fs-minipass': '/home/container/node_modules/.fs-minipass-x2SoOeqO',
+829 silly reify   '/home/container/node_modules/fs.realpath': '/home/container/node_modules/.fs.realpath-ZOVGqfyk',
+829 silly reify   '/home/container/node_modules/function-bind': '/home/container/node_modules/.function-bind-zjigk9QD',
+829 silly reify   '/home/container/node_modules/gauge': '/home/container/node_modules/.gauge-auPiVpMg',
+829 silly reify   '/home/container/node_modules/get-intrinsic': '/home/container/node_modules/.get-intrinsic-RatCNsbT',
+829 silly reify   '/home/container/node_modules/get-stream': '/home/container/node_modules/.get-stream-Z0R0st0Q',
+829 silly reify   '/home/container/node_modules/glob': '/home/container/node_modules/.glob-3L2uyhTt',
+829 silly reify   '/home/container/node_modules/got': '/home/container/node_modules/.got-hTyBkcML',
+829 silly reify   '/home/container/node_modules/has': '/home/container/node_modules/.has-I6I34k3T',
+829 silly reify   '/home/container/node_modules/has-symbols': '/home/container/node_modules/.has-symbols-1HQ4VRpS',
+829 silly reify   '/home/container/node_modules/has-unicode': '/home/container/node_modules/.has-unicode-RfdXtEF6',
+829 silly reify   '/home/container/node_modules/himalaya': '/home/container/node_modules/.himalaya-YOG6XBWU',
+829 silly reify   '/home/container/node_modules/http-cache-semantics': '/home/container/node_modules/.http-cache-semantics-W3BlpftV',
+829 silly reify   '/home/container/node_modules/http-response-object': '/home/container/node_modules/.http-response-object-ozLQyyHg',
+829 silly reify   '/home/container/node_modules/http2-wrapper': '/home/container/node_modules/.http2-wrapper-D30tJDCC',
+829 silly reify   '/home/container/node_modules/https-proxy-agent': '/home/container/node_modules/.https-proxy-agent-BeHdaGM0',
+829 silly reify   '/home/container/node_modules/human-signals': '/home/container/node_modules/.human-signals-im0Hv8ZI',
+829 silly reify   '/home/container/node_modules/inflight': '/home/container/node_modules/.inflight-tuaHIZ1y',
+829 silly reify   '/home/container/node_modules/inherits': '/home/container/node_modules/.inherits-jDmm7Yts',
+829 silly reify   '/home/container/node_modules/is-fullwidth-code-point': '/home/container/node_modules/.is-fullwidth-code-point-HxJxJjFV',
+829 silly reify   '/home/container/node_modules/is-stream': '/home/container/node_modules/.is-stream-sWi1Ih8S',
+829 silly reify   '/home/container/node_modules/is-unix': '/home/container/node_modules/.is-unix-WaJvsOiD',
+829 silly reify   '/home/container/node_modules/isarray': '/home/container/node_modules/.isarray-I8LtxXop',
+829 silly reify   '/home/container/node_modules/isexe': '/home/container/node_modules/.isexe-cG6X84co',
+829 silly reify   '/home/container/node_modules/json-buffer': '/home/container/node_modules/.json-buffer-pe1kIpsW',
+829 silly reify   '/home/container/node_modules/keyv': '/home/container/node_modules/.keyv-hjQ4Pl2d',
+829 silly reify   '/home/container/node_modules/lowercase-keys': '/home/container/node_modules/.lowercase-keys-nAbU5pG4',
+829 silly reify   '/home/container/node_modules/lru-cache': '/home/container/node_modules/.lru-cache-nDwf2tqc',
+829 silly reify   '/home/container/node_modules/m3u8stream': '/home/container/node_modules/.m3u8stream-g5ZDlc0G',
+829 silly reify   '/home/container/node_modules/make-dir': '/home/container/node_modules/.make-dir-BePFhKPE',
+829 silly reify   '/home/container/node_modules/merge-stream': '/home/container/node_modules/.merge-stream-XSeo2KNu',
+829 silly reify   '/home/container/node_modules/methods': '/home/container/node_modules/.methods-X5yIm3Ud',
+829 silly reify   '/home/container/node_modules/mime': '/home/container/node_modules/.mime-OqpHjQqc',
+829 silly reify   '/home/container/node_modules/mimic-fn': '/home/container/node_modules/.mimic-fn-IQ123sNF',
+829 silly reify   '/home/container/node_modules/mimic-response': '/home/container/node_modules/.mimic-response-G5Oe4tRC',
+829 silly reify   '/home/container/node_modules/miniget': '/home/container/node_modules/.miniget-GBTwqbCB',
+829 silly reify   '/home/container/node_modules/minimatch': '/home/container/node_modules/.minimatch-rElEqhmg',
+829 silly reify   '/home/container/node_modules/minipass': '/home/container/node_modules/.minipass-XkxmeMUK',
+829 silly reify   '/home/container/node_modules/minizlib': '/home/container/node_modules/.minizlib-MTu743e8',
+829 silly reify   '/home/container/node_modules/mkdirp': '/home/container/node_modules/.mkdirp-xuUfkeqX',
+829 silly reify   '/home/container/node_modules/node-addon-api': '/home/container/node_modules/.node-addon-api-PE5ZbsnT',
+829 silly reify   '/home/container/node_modules/nopt': '/home/container/node_modules/.nopt-IWywp9kP',
+829 silly reify   '/home/container/node_modules/normalize-url': '/home/container/node_modules/.normalize-url-KRism8DU',
+829 silly reify   '/home/container/node_modules/npm-run-path': '/home/container/node_modules/.npm-run-path-ptyh0NAI',
+829 silly reify   '/home/container/node_modules/npmlog': '/home/container/node_modules/.npmlog-M5uav57I',
+829 silly reify   '/home/container/node_modules/object-assign': '/home/container/node_modules/.object-assign-hAzQzJtU',
+829 silly reify   '/home/container/node_modules/object-inspect': '/home/container/node_modules/.object-inspect-cHlkwiiP',
+829 silly reify   '/home/container/node_modules/once': '/home/container/node_modules/.once-uqouPGyN',
+829 silly reify   '/home/container/node_modules/onetime': '/home/container/node_modules/.onetime-VPLpTp5l',
+829 silly reify   '/home/container/node_modules/p-cancelable': '/home/container/node_modules/.p-cancelable-W2gkD4wA',
+829 silly reify   '/home/container/node_modules/p-event': '/home/container/node_modules/.p-event-PSjaINqZ',
+829 silly reify   '/home/container/node_modules/p-finally': '/home/container/node_modules/.p-finally-UVTjB9YS',
+829 silly reify   '/home/container/node_modules/p-reflect': '/home/container/node_modules/.p-reflect-jfjYdevV',
+829 silly reify   '/home/container/node_modules/p-timeout': '/home/container/node_modules/.p-timeout-pcrALYvo',
+829 silly reify   '/home/container/node_modules/parse-cache-control': '/home/container/node_modules/.parse-cache-control-c9U6Luz3',
+829 silly reify   '/home/container/node_modules/path-is-absolute': '/home/container/node_modules/.path-is-absolute-ILjwbqVL',
+829 silly reify   '/home/container/node_modules/path-key': '/home/container/node_modules/.path-key-95TRuVUy',
+829 silly reify   '/home/container/node_modules/prism-media': '/home/container/node_modules/.prism-media-8ANm9Hg1',
+829 silly reify   '/home/container/node_modules/process-nextick-args': '/home/container/node_modules/.process-nextick-args-mjEEWLuX',
+829 silly reify   '/home/container/node_modules/progress': '/home/container/node_modules/.progress-EGnx9pSD',
+829 silly reify   '/home/container/node_modules/pump': '/home/container/node_modules/.pump-JcsNCibE',
+829 silly reify   '/home/container/node_modules/qs': '/home/container/node_modules/.qs-amBmjPgc',
+829 silly reify   '/home/container/node_modules/quick-lru': '/home/container/node_modules/.quick-lru-brm2kF7n',
+829 silly reify   '/home/container/node_modules/readable-stream': '/home/container/node_modules/.readable-stream-rHa3HpRO',
+829 silly reify   '/home/container/node_modules/resolve-alpn': '/home/container/node_modules/.resolve-alpn-1B1zDilP',
+829 silly reify   '/home/container/node_modules/responselike': '/home/container/node_modules/.responselike-HfMyZrJs',
+829 silly reify   '/home/container/node_modules/rimraf': '/home/container/node_modules/.rimraf-1HSCxFRz',
+829 silly reify   '/home/container/node_modules/safe-buffer': '/home/container/node_modules/.safe-buffer-RulgivU5',
+829 silly reify   '/home/container/node_modules/sax': '/home/container/node_modules/.sax-zEnPMhLD',
+829 silly reify   '/home/container/node_modules/semver': '/home/container/node_modules/.semver-clkkOKMn',
+829 silly reify   '/home/container/node_modules/set-blocking': '/home/container/node_modules/.set-blocking-8zWzElRI',
+829 silly reify   '/home/container/node_modules/shebang-command': '/home/container/node_modules/.shebang-command-kbD1M1NO',
+829 silly reify   '/home/container/node_modules/shebang-regex': '/home/container/node_modules/.shebang-regex-K5b2JUae',
+829 silly reify   '/home/container/node_modules/side-channel': '/home/container/node_modules/.side-channel-6QhLGc6g',
+829 silly reify   '/home/container/node_modules/signal-exit': '/home/container/node_modules/.signal-exit-L79piyjV',
+829 silly reify   '/home/container/node_modules/soundcloud.ts': '/home/container/node_modules/.soundcloud.ts-ZkaGCoyV',
+829 silly reify   '/home/container/node_modules/spotify-uri': '/home/container/node_modules/.spotify-uri-DobOubLy',
+829 silly reify   '/home/container/node_modules/spotify-url-info': '/home/container/node_modules/.spotify-url-info-0KhLblj1',
+829 silly reify   '/home/container/node_modules/spotify-web-api-node': '/home/container/node_modules/.spotify-web-api-node-Ck1Qcp8H',
+829 silly reify   '/home/container/node_modules/string-width': '/home/container/node_modules/.string-width-NOixKwUx',
+829 silly reify   '/home/container/node_modules/string_decoder': '/home/container/node_modules/.string_decoder-vk8TkMwn',
+829 silly reify   '/home/container/node_modules/strip-ansi': '/home/container/node_modules/.strip-ansi-70yw5tTO',
+829 silly reify   '/home/container/node_modules/strip-final-newline': '/home/container/node_modules/.strip-final-newline-RqsemJKj',
+829 silly reify   '/home/container/node_modules/superagent': '/home/container/node_modules/.superagent-sueXchyP',
+829 silly reify   '/home/container/node_modules/tar': '/home/container/node_modules/.tar-dHp75Ux6',
+829 silly reify   '/home/container/node_modules/tiny-typed-emitter': '/home/container/node_modules/.tiny-typed-emitter-zQqYg7tf',
+829 silly reify   '/home/container/node_modules/typedarray': '/home/container/node_modules/.typedarray-eMXm8km3',
+829 silly reify   '/home/container/node_modules/util-deprecate': '/home/container/node_modules/.util-deprecate-ljR5cRWy',
+829 silly reify   '/home/container/node_modules/which': '/home/container/node_modules/.which-a0RAFcK4',
+829 silly reify   '/home/container/node_modules/wide-align': '/home/container/node_modules/.wide-align-k30pwJ6Z',
+829 silly reify   '/home/container/node_modules/wrappy': '/home/container/node_modules/.wrappy-8O5bbHBw',
+829 silly reify   '/home/container/node_modules/yallist': '/home/container/node_modules/.yallist-PtKjyEX4',
+829 silly reify   '/home/container/node_modules/@derhuerst/http-basic': '/home/container/node_modules/@derhuerst/.http-basic-VGa2owb6',
+829 silly reify   '/home/container/node_modules/@discordjs/builders': '/home/container/node_modules/@discordjs/.builders-0rURmu76',
+829 silly reify   '/home/container/node_modules/@discordjs/node-pre-gyp': '/home/container/node_modules/@discordjs/.node-pre-gyp-XIiPvC7f',
+829 silly reify   '/home/container/node_modules/@discordjs/opus': '/home/container/node_modules/@discordjs/.opus-6plSX7if',
+829 silly reify   '/home/container/node_modules/@discordjs/voice': '/home/container/node_modules/@discordjs/.voice-KV5Q0asj',
+829 silly reify   '/home/container/node_modules/@distube/soundcloud': '/home/container/node_modules/@distube/.soundcloud-1hGfcH0C',
+829 silly reify   '/home/container/node_modules/@distube/spotify': '/home/container/node_modules/@distube/.spotify-yarnrIQh',
+829 silly reify   '/home/container/node_modules/@distube/youtube-dl': '/home/container/node_modules/@distube/.youtube-dl-x3LXPF2M',
+829 silly reify   '/home/container/node_modules/@distube/yt-dlp': '/home/container/node_modules/@distube/.yt-dlp-Nsa3G22i',
+829 silly reify   '/home/container/node_modules/@distube/ytdl-core': '/home/container/node_modules/@distube/.ytdl-core-jeHIplKu',
+829 silly reify   '/home/container/node_modules/@distube/ytpl': '/home/container/node_modules/@distube/.ytpl-w7wSgaUw',
+829 silly reify   '/home/container/node_modules/@distube/ytsr': '/home/container/node_modules/@distube/.ytsr-iDFu4jhy',
+829 silly reify   '/home/container/node_modules/@szmarczak/http-timer': '/home/container/node_modules/@szmarczak/.http-timer-xKjpjB4s',
+829 silly reify   '/home/container/node_modules/@types/cacheable-request': '/home/container/node_modules/@types/.cacheable-request-fouvnRoC',
+829 silly reify   '/home/container/node_modules/@types/http-cache-semantics': '/home/container/node_modules/@types/.http-cache-semantics-A9qQWyKJ',
+829 silly reify   '/home/container/node_modules/@types/json-buffer': '/home/container/node_modules/@types/.json-buffer-Ndo1OkoC',
+829 silly reify   '/home/container/node_modules/@types/keyv': '/home/container/node_modules/@types/.keyv-6q5WWAkb',
+829 silly reify   '/home/container/node_modules/@types/responselike': '/home/container/node_modules/@types/.responselike-JrW65fa4'
+829 silly reify }
+830 timing reify:rollback:retireShallow Completed in 38ms
+831 timing command:install Completed in 2239ms
+832 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/container/node_modules/@discordjs/builders' -> '/home/container/node_modules/@discordjs/.builders-0rURmu76'
+833 verbose cwd /home/container
+834 verbose Linux 5.10.0-13-amd64
+835 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "i"
+836 verbose node v16.6.1
+837 verbose npm  v7.20.3
+838 error code ENOTEMPTY
+839 error syscall rename
+840 error path /home/container/node_modules/@discordjs/builders
+841 error dest /home/container/node_modules/@discordjs/.builders-0rURmu76
+842 error errno -39
+843 error ENOTEMPTY: directory not empty, rename '/home/container/node_modules/@discordjs/builders' -> '/home/container/node_modules/@discordjs/.builders-0rURmu76'
+844 verbose exit -39
