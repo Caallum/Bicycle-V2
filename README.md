@@ -1,12 +1,14 @@
 # Bicycle
 
+# **UNCOMPLETED DO NOT USE**
+
 > Modmail and Moderation Discord Bot
 
-### Made by TURPH
+### Made by Caallum
 
 ## Replit Support
 
-To get started, go into replit and then clone the github repo https://github.com/Tur-ph/bicycle
+To get started, go into replit and then clone the github repo 
 
 After doing this, head to src/config.js then change `"replit": false,` to `"replit": true,`
 
