@@ -1,12 +1,12 @@
 import { SlashCommandBuilder, SlashCommandUserOption } from "@discordjs/builders";
 import BaseCommand from "../../structures/BaseCommand.js";
 
-export default class PingCommand extends BaseCommand {
+export default class BanCommand extends BaseCommand {
     constructor() {
         super(
             new SlashCommandBuilder()
-                .setName("warn")
-                .setDescription("Warn a user")
+                .setName("ban")
+                .setDescription("Ban a user")
                 .addUserOption(
                     new SlashCommandUserOption()
                         .setName("target")
@@ -15,7 +15,7 @@ export default class PingCommand extends BaseCommand {
                 )
                 .addStringOption(option => 
                         option.setName("reason")
-                            .setDescription("Reason for warning this user")
+                            .setDescription("Reason for banning this user")
                             .setRequired(true)
                     ),
             true,
@@ -23,6 +23,6 @@ export default class PingCommand extends BaseCommand {
     }
 
     async run(interaction) {
-        if(!await interaction.client.moderator._automod(interaction, "warn")) await interaction.client.moderator.warn(interaction);
+        await interaction.client.moderator.ban(interaction);
     }
 }

@@ -1,28 +1,27 @@
 import { SlashCommandBuilder, SlashCommandUserOption } from "@discordjs/builders";
 import BaseCommand from "../../structures/BaseCommand.js";
 
-export default class PingCommand extends BaseCommand {
+export default class UnmuteCommand extends BaseCommand {
     constructor() {
         super(
             new SlashCommandBuilder()
-                .setName("warn")
-                .setDescription("Warn a user")
+                .setName("unmute")
+                .setDescription("Unmute a user")
                 .addUserOption(
                     new SlashCommandUserOption()
                         .setName("target")
-                        .setDescription("User you wish to punish")
+                        .setDescription("User you wish to unmute")
                         .setRequired(true)
                 )
                 .addStringOption(option => 
                         option.setName("reason")
-                            .setDescription("Reason for warning this user")
+                            .setDescription("Reason for unmuting this user")
                             .setRequired(true)
-                    ),
-            true,
+                ),
         )
     }
 
     async run(interaction) {
-        if(!await interaction.client.moderator._automod(interaction, "warn")) await interaction.client.moderator.warn(interaction);
+        await interaction.client.moderator.unmute(interaction);
     }
 }

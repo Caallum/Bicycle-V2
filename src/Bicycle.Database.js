@@ -154,10 +154,6 @@ export default class database extends EventEmitter {
 	    return await this.set(key, existing);
 	  };
 	  
-	  if(!Array.isArray(values)) {
-	    return Promise.resolve(false);
-	  }
-	  
-	  return await this.set(key, values);
+	  return await this.set(key, [values]);
 	}
 }

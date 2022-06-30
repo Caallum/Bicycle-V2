@@ -8,16 +8,18 @@ export default class BicycleCases {
     async _caseNumber() {
         let cases = await this.client.db.get(`cases`);
         if(!cases) {
-            await this.client.db.set(`cases`);
+            await this.client.db.set(`cases`, 1);
             return 1;
         };
 
-        await this.client.db.set(`cases`, cases++);
-        return cases++;
+        cases += 1
+
+        await this.client.db.set(`cases`, cases);
+        return cases;
     }
 
-    async addCase(moderator, user, reason, punishment) {
-        let caseNumber = this._caseNumber();
+    async addCase(moderator, user, reason, punishment, time = null) {
+        let caseNumber = await this._caseNumber();
 
         let caseObject = {
             case: caseNumber,
@@ -36,20 +38,22 @@ export default class BicycleCases {
             }
         };
 
+        if(time) caseObject.action.time = time;
+
         await this.client.db.set(`cases-${caseNumber}`, caseObject)
+        await this.addUserCase(user.id, caseObject)
         return caseNumber;
-    }
-
-    async removeCase(caseId) {
-        let Case = await this.client.db.get(`cases-${caseId}`);
-        if(!Case) return false;
-
-        await this.client.db.delete(caseId);
-        return true;
     }
 
     async findCase(caseId) {
         return await this.client.db.get(`cases-${caseId}`)
+    }
+
+    async editCase(caseId, reason) {
+        let caseObject = await this.client.db.get(`cases-${caseId}`)
+
+        caseObject.action.reason = reason;
+        await this.client.db.set(`cases-${caseId}`, caseObject)
     }
 
     async addUserCase(userId, caseObject) {
@@ -62,7 +66,7 @@ export default class BicycleCases {
     }
 
     async getUserWarns(userId) {
-        let punishments = this.getUserCases(userId);
+        let punishments = await this.getUserCases(userId);
         if(!punishments) return [];
 
         let warns = [];
@@ -76,7 +80,7 @@ export default class BicycleCases {
     }
 
     async getUserMutes(userId) {
-        let punishments = this.getUserCases(userId);
+        let punishments = await this.getUserCases(userId);
         if(!punishments) return [];
 
         let mutes = [];
@@ -90,7 +94,7 @@ export default class BicycleCases {
     }
 
     async getUserKicks(userId) {
-        let punishments = this.getUserCases(userId);
+        let punishments = await this.getUserCases(userId);
         if(!punishments) return [];
 
         let kicks = [];
@@ -104,7 +108,7 @@ export default class BicycleCases {
     }
 
     async getUserBans(userId) {
-        let punishments = this.getUserCases(userId);
+        let punishments = await this.getUserCases(userId);
         if(!punishments) return [];
 
         let bans = [];
@@ -118,7 +122,7 @@ export default class BicycleCases {
     }
 
     async removeUserCase(userId, caseId) {
-        let newPunishments = this._pullCase(caseId, userId);
+        let newPunishments = await this._pullCase(caseId, userId);
         await this.client.db.set(`punishments-${userId}`, newPunishments)
         return true;
     }
@@ -130,5 +134,12 @@ export default class BicycleCases {
         let index = history.findIndex((x) => x.caseId == caseId);
         history = history.splice(index, 1);
         return history;
+    }
+
+    async deleteCase(caseId) {
+        let caseObject = await this.client.db.get(`cases-${caseId}`);
+
+        caseObject.delete = true;
+        await this.client.db.set(`cases-${caseId}`, caseObject)
     }
 }

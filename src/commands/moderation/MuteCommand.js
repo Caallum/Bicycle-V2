@@ -29,6 +29,6 @@ export default class PingCommand extends BaseCommand {
     }
 
     async run(interaction) {
-        await interaction.client.moderator.mute(interaction);
+        if(!await interaction.client.moderator._automod(interaction, "mute")) await interaction.client.moderator.mute(interaction);
     }
 }
