@@ -1,7 +1,7 @@
 import Logger from "./Logger.js";
 import date from "./utils/date.js"
 import embed from "./utils/embed.js"
-import BiycleConfig from "./Biycle.Config.js";
+import BiycleConfig from "./Bicycle.Config.js";
 
 import ms from "ms";
 

@@ -6,30 +6,52 @@ export default {
         developerRoleID: "",
         bot: {
             token: "",
-            mongoURI: ""
+            mongoURI: "",
+            moderation: {
+                logChannel: ""
+            }
         },
         music: {
             spotify: {
                 id: "",
                 secret: ""
             },
-            youtubeCookie: ""    
+            youtubeCookie: ""
         }
     },
 
     other: {
-        modmail: {
-            category: "",
+        client: "",
+        guild: "",
+        tickets: {
+            createCategory: "",
+            pendingCategory: "",
+            claimedCategory: "",
+            transcriptChannel: "",
+            options: [
+                {
+                    name: "Report",
+                    description: "Report a user for a crime",
+                    emoji: "👮",
+                },
+                {
+                    name: "Suggestion",
+                    description: "Suggest a feature for the server",
+                    emoji: "💡"
+                },
+                {
+                    name: "Order",
+                    description: "Place an order for a custom made bot",
+                    emoji: "🍔"
+                }
+            ]
         },
 
-        guild: "",
-        mutedRole: "",
-
         embed: {
-            color: "",
+            color: "YELLOW",
             footer: {
-                text: "",
-                icon: "",
+                text: "Bicycle",
+                icon: "{avatar}"
             },
             author: {
                 text: "",

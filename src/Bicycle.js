@@ -7,12 +7,13 @@ import { Routes } from "discord-api-types/v9";
 // Files
 import BaseEvent from "./structures/BaseEvent.js"
 import BaseCommand from "./structures/BaseCommand.js";
-import config from "./Biycle.Config.js"
+import config from "./Bicycle.Config.js"
 import Logger from "./Logger.js";
 import BicyclePlayer from "./Bicycle.Player.js"
 import BicycleDatabase from "./Bicycle.Database.js"
 import BicycleModeration from "./Bicycle.Moderation.js";
 import BicycleCases from "./Bicycle.Cases.js";
+import BicycleTickets from "./Bicycle.Tickets.js";
 
 // Main File
 
@@ -29,10 +30,19 @@ class Bicycle {
         this.MusicHandler()
         this.DatabaseHandler()
         this.ModerationHandler()
+        this.TicketHandler()
     }
 
     get getClient() {
         return this.client;
+    }
+
+    async TicketHandler() {
+        this.client.tickets = new BicycleTickets(this.client);
+        new Logger({
+            success: true,
+            message: `Ticket Handler is active`
+        })
     }
 
     async MusicHandler() {

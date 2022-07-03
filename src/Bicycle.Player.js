@@ -3,7 +3,7 @@ import { YtDlpPlugin } from '@distube/yt-dlp';
 import { SpotifyPlugin } from '@distube/spotify';
 import { SoundCloudPlugin } from '@distube/soundcloud';
 import { MessageEmbed } from 'discord.js';
-import config from './Biycle.Config.js';
+import config from './Bicycle.Config.js';
 import embed from "./utils/embed.js"
 import Logger from './Logger.js';
 
@@ -215,15 +215,9 @@ export default class musicPlayer {
         let queue = await this.player.getQueue(interaction.guild.id);
         if(!await this.player.getQueue(interaction.guild.id)) return this.embed(`Music Player is currently not playing anything`, "", interaction, true);
 
-        interaction.reply({
-            embeds: [
-                new MessageEmbed()
-                    .setTitle("Current Queue")
-                    .setColor(config.color)
-                    .setDescription(queue.songs.map((song, id) =>
-            `**${id+1}. ${song.name}** requested by ${song.user.toString()}`
-        ).join("\n"))
-            ], ephemeral: true 
+        new embed(interaction, {
+            title: `Current Queue`,
+            description: queue.songs.map((song, id) => `**${id+1}. ${song.name}** requested by ${song.user.toString()}`).join("\n")
         })
     }
 }

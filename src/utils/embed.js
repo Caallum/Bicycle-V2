@@ -1,5 +1,5 @@
 import { MessageEmbed as Embed } from "discord.js";
-import { default as Config } from "../Biycle.Config.js";
+import { default as Config } from "../Bicycle.Config.js";
 import Bicycle from "../Bicycle.js";
 import Logger from "../Logger.js";
 
@@ -48,11 +48,12 @@ export default class BicycleEmbed {
         if(data.thumbnail) EmbedMessage.setThumbnail(data.thumbnail)
         if(data.fields) EmbedMessage.addFields(data.fields)
         if(data.url) EmbedMessage.setURL(data.url)
+        if(data.returnEmbed) return EmbedMessage
         
         if(channel?.applicationId) {
-            if(data.ephermal) {
-                if(data.message) return channel.reply({ embeds: [EmbedMessage], content: data.message, ephermal: true }).catch((err) => new Logger({ error: true, message: err }))
-                return channel.reply({ embeds: [EmbedMessage], ephermal: true }).catch((err) => new Logger({ error: true, message: err }))
+            if(data.ephemeral) {
+                if(data.message) return channel.reply({ embeds: [EmbedMessage], content: data.message, ephemeral: true }).catch((err) => new Logger({ error: true, message: err }))
+                return channel.reply({ embeds: [EmbedMessage], ephemeral: true }).catch((err) => new Logger({ error: true, message: err }))
             }
 
             if(data.message) return channel.reply({ embeds: [EmbedMessage], content: data.message }).catch((err) => new Logger({ error: true, message: err }))
