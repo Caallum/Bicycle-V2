@@ -14,6 +14,7 @@ import BicycleDatabase from "./Bicycle.Database.js"
 import BicycleModeration from "./Bicycle.Moderation.js";
 import BicycleCases from "./Bicycle.Cases.js";
 import BicycleTickets from "./Bicycle.Tickets.js";
+import BicycleLogs from "./Bicycle.Logs.js";
 
 // Main File
 
@@ -21,7 +22,7 @@ class Bicycle {
     constructor() {
         this.config = config;
 
-        this.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_BANS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES ], partials: ["CHANNEL"]});
+        this.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_BANS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES ], partials: ["CHANNEL", "MESSAGE"]});
 
         this.client.login(this.config.important.bot.token)
 
@@ -31,10 +32,19 @@ class Bicycle {
         this.DatabaseHandler()
         this.ModerationHandler()
         this.TicketHandler()
+        this.LogHandler()
     }
 
     get getClient() {
         return this.client;
+    }
+
+    async LogHandler() {
+        this.client.log = new BicycleLogs(this.client);
+        new Logger({
+            success: true,
+            message: `Log Handler is active`
+        })
     }
 
     async TicketHandler() {

@@ -331,6 +331,14 @@ export default class BicycleModeration {
         return new embed(interaction, { title: `${user.tag} has ${cases.length} previous punishmens`, description: cases.map((id) => `Case ${id}`).join(", ")})
     }
 
+    async purge(interaction) {
+        let amount = interaction.options.getNumber("amount")
+
+        await interaction.channel.bulkDelete(amount, true)
+        new embed(interaction, { title: `Successfully deleleted ${amount} message`})
+        return this._log("purge", interaction.member, { tag: `AUTOMOD#0000`, id: "AUTOMOD" }, "PURGE COMMAND")
+    }
+
     async _log(command, moderator, user, caseId, reason = null) {
         let channel = await this.client.channels.fetch(BiycleConfig.important.bot.moderation.logChannel).catch(() => { });
         if(!channel) return;

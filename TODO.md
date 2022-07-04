@@ -10,21 +10,22 @@ Moderation:
         [X] Delete Case Command
         [X] View Case Command
     [X] History Command
+    [X] Purge Command
     [X] AutoModerator
         [X] Detect 3 warns
         [X] Detect 3 mutes
         [X] Detect 3 kicks
-    [] Create Logging System
-        [] Message edit
-        [] Message delete
-        [] User role change
-        [] User nickname change
-        [] Role edited
-        [] Role created
-        [] Role deleted
-        [] Channel edited
-        [] Channel created
-        [] Channel Deleted
+    [X] Create Logging System
+        [X] Member Joined
+        [X] Member Leaving
+        [X] Member Updated
+        [X] Message edit
+        [X] Message delete
+        [X] Role edited
+        [X] Role created
+        [X] Role deleted
+        [X] Channel created
+        [X] Channel Deleted
 
 Ticket:
     [X] Create tickets

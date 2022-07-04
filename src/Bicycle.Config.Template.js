@@ -1,7 +1,4 @@
 export default {
-    
-    replit: false,
-
     important: {
         developerRoleID: "",
         bot: {
